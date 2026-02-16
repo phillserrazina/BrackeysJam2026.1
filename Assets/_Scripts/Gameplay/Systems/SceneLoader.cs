@@ -56,11 +56,6 @@ namespace FishingGame.Systems
 
             OnLoadingBegin?.Invoke();
 
-            foreach (var button in FindObjectsByType<Button>(FindObjectsSortMode.None))
-            {
-                button.interactable = false;
-            }
-
             loadingScreenCanvas.FadeIn(0.25f);
 
             yield return new WaitForSecondsRealtime(0.3f);
@@ -73,7 +68,7 @@ namespace FishingGame.Systems
 
             yield return StartCoroutine(LoadingScreenCoroutine());
 
-            UnityEngine.SceneManagement.Scene scene = SceneManager.GetSceneByName(environmentName);
+            Scene scene = SceneManager.GetSceneByName(environmentName);
             SceneManager.SetActiveScene(scene);
 
             yield return new WaitForSecondsRealtime(0.2f);

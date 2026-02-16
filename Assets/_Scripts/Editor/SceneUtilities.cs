@@ -18,11 +18,21 @@ namespace FishingGame.Editor
 		}
 
         [MenuItem("Scene/Open/Earth", priority = 101)]
-        static void OpenHubPrototype()
+        static void OpenEarth()
         {
             if (EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
             {
                 EditorSceneManager.OpenScene("Assets/_Scenes/Earth.unity");
+                LoadLogicScenes();
+            }
+        }
+
+        [MenuItem("Scene/Open/Planet 2", priority = 101)]
+        static void OpenPlanet2()
+        {
+            if (EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
+            {
+                EditorSceneManager.OpenScene("Assets/_Scenes/Planet 2.unity");
                 LoadLogicScenes();
             }
         }
