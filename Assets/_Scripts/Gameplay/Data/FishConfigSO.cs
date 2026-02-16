@@ -14,5 +14,8 @@ namespace FishingGame.Data
 
         [Space(5)]
         public Sprite Sprite;
+
+        [Space(5)]
+        public float SellValue = 10f;
     }
 }

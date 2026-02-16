@@ -6,12 +6,17 @@ namespace FishingGame.Systems
 	public class PlayerManager : MonoBehaviour
 	{
         // VARIABLES
+        [SerializeField] private PlayerFishingController fishingController;
+
+        public PlayerWallet Wallet { get; private set; }
+
         public static PlayerManager Instance { get; private set; }
 
         // EXECUTION FUNCTIONS
         private void Awake()
         {
             Instance = this;
+            Wallet = new();
         }
 
         private void Start()
@@ -21,10 +26,21 @@ namespace FishingGame.Systems
 
         private void Update()
         {
-            if (Keyboard.current.escapeKey.wasPressedThisFrame)
+            if (Keyboard.current.fKey.wasPressedThisFrame)
             {
-                Application.Quit();
+                fishingController.BeginFishing();
             }
+        }
+
+        // INPUT
+        private void OnFish(InputValue input)
+        {
+            fishingController.SetCatchBarMovementActive(input.isPressed);
+        }
+
+        private void OnPause(InputValue input)
+        {
+            Application.Quit();
         }
 
         // METHODS

@@ -27,7 +27,7 @@ namespace FishingGame.Editor
             }
         }
 
-        [MenuItem("Scene/Open/Planet 2", priority = 101)]
+        [MenuItem("Scene/Open/Planet 2", priority = 102)]
         static void OpenPlanet2()
         {
             if (EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
