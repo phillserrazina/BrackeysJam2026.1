@@ -40,6 +40,7 @@ namespace FishingGame.Gameplay.Systems
         public UpgradeConfigSO GetUpgradeByID(string id) => upgradesArray.FirstOrDefault(upgrade => upgrade.ObjectID == id);
     
         public FishConfigSO GetRandomFishData() => fishArray[Random.Range(0, fishArray.Length)];
+        public FishConfigSO GetRandomFishData(PlanetConfigSO location) => location.Fishes[Random.Range(0, location.Fishes.Length)];
 
     }
 }

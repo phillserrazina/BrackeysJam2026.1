@@ -15,5 +15,6 @@ MonoBehaviour:
   Name: Planet 2
   Description: The Planet after earth
   Sprite: {fileID: 0}
-  Fishes: []
+  Fishes:
+  - {fileID: 11400000, guid: 247b409f96e9bee4783d6afe8024ac0d, type: 2}
   ObjectID: Planet_1

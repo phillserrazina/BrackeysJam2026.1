@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c8f38cb68ae33f4f835ee8daf2e295b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Gameplay.Systems.LocationManager
-  planet: {fileID: 11400000, guid: 0b5a9c8c6ef7f6a4f81028c14028127e, type: 2}
+  locationConfig: {fileID: 11400000, guid: 0b5a9c8c6ef7f6a4f81028c14028127e, type: 2}
 --- !u!1 &1157519055
 GameObject:
   m_ObjectHideFlags: 0

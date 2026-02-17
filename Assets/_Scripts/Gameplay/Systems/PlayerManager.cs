@@ -31,7 +31,10 @@ namespace FishingGame.Gameplay.Systems
         {
             if (Keyboard.current.fKey.wasPressedThisFrame)
             {
-                fishingController.BeginFishing(DataManager.Instance.GetRandomFishData());
+                PlanetConfigSO currentPlanet = LocationManager.Instance.CurrentLocation;
+                FishConfigSO randomFish = DataManager.Instance.GetRandomFishData(currentPlanet);
+
+                fishingController.BeginFishing(randomFish);
             }
         }
 

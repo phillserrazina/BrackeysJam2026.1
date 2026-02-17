@@ -6,8 +6,8 @@ namespace FishingGame.Gameplay.Systems
     public class LocationManager : MonoBehaviour
     {
         // VARIABLES
-        [SerializeField] private PlanetConfigSO planet;
-        public PlanetConfigSO Planet => planet;
+        [SerializeField] private PlanetConfigSO locationConfig;
+        public PlanetConfigSO CurrentLocation => locationConfig;
 
         public static LocationManager Instance { get; private set; }
 
