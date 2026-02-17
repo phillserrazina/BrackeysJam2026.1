@@ -46,7 +46,7 @@ namespace FishingGame.Gameplay.Systems
 
         private void OnPause(InputValue input)
         {
-            Application.Quit();
+            GameManager.Instance.TriggerPause();
         }
 
         // METHODS

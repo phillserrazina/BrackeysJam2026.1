@@ -8,6 +8,11 @@ namespace FishingGame.UI
     public class DebugButtonsUI : MonoBehaviour
     {
         // METHODS
+        public void PauseButton()
+        {
+            GameManager.Instance.Pause();
+        }
+
         public void LoadScene(string sceneName)
         {
             if (SceneLoader.Instance == null)
