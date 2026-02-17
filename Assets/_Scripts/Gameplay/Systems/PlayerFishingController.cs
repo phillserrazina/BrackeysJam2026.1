@@ -140,6 +140,8 @@ namespace FishingGame.Gameplay.Systems
             {
                 gameObject.SetActive(false);
                 playerWallet.Add(CurrencyTypes.Gold, currentFish.SellValue);
+
+                CollectionManager.Instance.RegisterCatch(currentFish);
             }
             else if (currentProgress <= 0f)
             {
