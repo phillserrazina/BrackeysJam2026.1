@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-using FishingGame.Systems;
+using FishingGame.Gameplay.Systems;
 
 namespace FishingGame.UI
 {

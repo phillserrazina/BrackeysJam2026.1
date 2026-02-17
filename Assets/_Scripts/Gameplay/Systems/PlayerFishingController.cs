@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.InputSystem;
+
 using FishingGame.Data;
 
-namespace FishingGame.Systems
+namespace FishingGame.Gameplay.Systems
 {
     public class PlayerFishingController : MonoBehaviour
     {
@@ -34,6 +34,8 @@ namespace FishingGame.Systems
 
         private PlayerWallet playerWallet;
 
+        private FishConfigSO currentFish;
+
         // EXECUTION FUNCTIONS
         private void Start()
         {
@@ -52,6 +54,8 @@ namespace FishingGame.Systems
         // METHODS
         public void BeginFishing(FishConfigSO fishConfig)
         {
+            currentFish = fishConfig;
+
             ResetCatchBarPosition();
 
             currentProgress = 0.5f;
@@ -135,7 +139,7 @@ namespace FishingGame.Systems
             if (currentProgress >= 1f)
             {
                 gameObject.SetActive(false);
-                playerWallet.Add(CurrencyTypes.Gold, 10f);
+                playerWallet.Add(CurrencyTypes.Gold, currentFish.SellValue);
             }
             else if (currentProgress <= 0f)
             {

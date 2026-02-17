@@ -17,3 +17,4 @@ MonoBehaviour:
   Sprite: {fileID: 0}
   Fishes:
   - {fileID: 11400000, guid: aff64b9b8f5004540ad1132a14ed3aef, type: 2}
+  ObjectID: Planet_0

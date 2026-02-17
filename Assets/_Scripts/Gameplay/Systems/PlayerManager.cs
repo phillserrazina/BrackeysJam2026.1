@@ -1,9 +1,10 @@
 using FishingGame.Data;
-using FishingGame.Gameplay.Systems;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace FishingGame.Systems
+using FishingGame.Gameplay.Systems;
+
+namespace FishingGame.Gameplay.Systems
 {
 	public class PlayerManager : MonoBehaviour
 	{

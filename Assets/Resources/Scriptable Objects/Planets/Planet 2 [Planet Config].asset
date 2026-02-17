@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c8089ea974ea2840970e549300af06a, type: 3}
-  m_Name: 'Anchovy [Fish Config]'
-  m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.FishConfigSO
-  Name: Anchovy
-  Description: It's an Anchovy!
-  Rarity: 0
+  m_Script: {fileID: 11500000, guid: 40c2cbb2ff542c64d9dbf8e680c0496f, type: 3}
+  m_Name: 'Planet 2 [Planet Config]'
+  m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.PlanetConfigSO
+  Name: Planet 2
+  Description: The Planet after earth
   Sprite: {fileID: 0}
-  SellValue: 10
-  ObjectID: Fish_0
+  Fishes: []
+  ObjectID: Planet_1
