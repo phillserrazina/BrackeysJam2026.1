@@ -1,3 +1,5 @@
+using FishingGame.Data;
+using FishingGame.Gameplay.Systems;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -28,7 +30,7 @@ namespace FishingGame.Systems
         {
             if (Keyboard.current.fKey.wasPressedThisFrame)
             {
-                fishingController.BeginFishing();
+                fishingController.BeginFishing(DataManager.Instance.GetRandomFishData());
             }
         }
 
