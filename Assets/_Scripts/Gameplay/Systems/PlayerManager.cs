@@ -1,7 +1,10 @@
+using FishingGame.Data;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace FishingGame.Systems
+using FishingGame.Gameplay.Systems;
+
+namespace FishingGame.Gameplay.Systems
 {
 	public class PlayerManager : MonoBehaviour
 	{
@@ -28,7 +31,10 @@ namespace FishingGame.Systems
         {
             if (Keyboard.current.fKey.wasPressedThisFrame)
             {
-                fishingController.BeginFishing();
+                PlanetConfigSO currentPlanet = LocationManager.Instance.CurrentLocation;
+                FishConfigSO randomFish = DataManager.Instance.GetRandomFishData(currentPlanet);
+
+                fishingController.BeginFishing(randomFish);
             }
         }
 
@@ -40,7 +46,7 @@ namespace FishingGame.Systems
 
         private void OnPause(InputValue input)
         {
-            Application.Quit();
+            GameManager.Instance.TriggerPause();
         }
 
         // METHODS

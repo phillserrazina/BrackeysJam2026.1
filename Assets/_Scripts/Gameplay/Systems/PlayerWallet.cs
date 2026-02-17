@@ -5,7 +5,7 @@ using UnityEngine;
 
 public enum CurrencyTypes { Gold }
 
-namespace FishingGame.Systems
+namespace FishingGame.Gameplay.Systems
 {
     public class PlayerWallet
     {

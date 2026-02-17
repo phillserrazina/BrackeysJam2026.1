@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.InputSystem;
 
-namespace FishingGame.Systems
+using FishingGame.Data;
+
+namespace FishingGame.Gameplay.Systems
 {
     public class PlayerFishingController : MonoBehaviour
     {
@@ -13,10 +14,15 @@ namespace FishingGame.Systems
         [SerializeField] private RectTransform catchBar;
         [SerializeField] private Image progressBar;
 
-        [Header("Settings")]
+        [Header("Catch Bar Settings")]
+        [SerializeField] private float catchBarSize = 150f;
         [SerializeField] private float catchBarSpeed = 500f;
         [SerializeField] private float gravity = 800f;
+        
+        [Header("Fish Settings")]
         [SerializeField] private float fishSpeed = 200f;
+
+        [Header("Progress Settings")]
         [SerializeField] private float progressFillRate = 0.5f;
         [SerializeField] private float progressDepleteRate = 0.3f;
 
@@ -28,6 +34,8 @@ namespace FishingGame.Systems
 
         private PlayerWallet playerWallet;
 
+        private FishConfigSO currentFish;
+
         // EXECUTION FUNCTIONS
         private void Start()
         {
@@ -36,6 +44,7 @@ namespace FishingGame.Systems
 
         private void Update()
         {
+            UpdateFishingSettings();
             HandleCatchBarMovement();
             HandleFishMovement();
             UpdateProgress();
@@ -43,15 +52,30 @@ namespace FishingGame.Systems
         }
 
         // METHODS
-        public void BeginFishing()
+        public void BeginFishing(FishConfigSO fishConfig)
         {
+            currentFish = fishConfig;
+
+            ResetCatchBarPosition();
+
             currentProgress = 0.5f;
+            progressBar.fillAmount = currentProgress;
+
             gameObject.SetActive(true);
+
+            Debug.Log($"PlayerFishingController::BeginFishing() --- Begin fishing {fishConfig.Name}");
         }
-        
+
         public void SetCatchBarMovementActive(bool isActive)
         {
             catchBarIsMoving = isActive;
+        }
+
+        private void UpdateFishingSettings()
+        {
+            Vector3 catchBarDelta = catchBar.sizeDelta;
+            catchBarDelta.y = catchBarSize;
+            catchBar.sizeDelta = catchBarDelta;
         }
 
         private void HandleCatchBarMovement()
@@ -80,7 +104,6 @@ namespace FishingGame.Systems
             }
 
             pos.y = Mathf.Clamp(pos.y, bottom, top);
-
             catchBar.anchoredPosition = pos;
         }
 
@@ -116,12 +139,24 @@ namespace FishingGame.Systems
             if (currentProgress >= 1f)
             {
                 gameObject.SetActive(false);
-                playerWallet.Add(CurrencyTypes.Gold, 10f);
+                playerWallet.Add(CurrencyTypes.Gold, currentFish.SellValue);
             }
             else if (currentProgress <= 0f)
             {
                 gameObject.SetActive(false);
             }
+        }
+
+        private void ResetCatchBarPosition()
+        {
+            Vector2 pos = catchBar.anchoredPosition;
+
+            float barHeight = catchBar.rect.height;
+            float containerHeight = fishingBarContainer.rect.height;
+
+            float bottom = -containerHeight / 2 + barHeight / 2;
+            pos.y = bottom;
+            catchBar.anchoredPosition = pos;
         }
     }
 }

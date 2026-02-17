@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-using FishingGame.Systems;
+using FishingGame.Gameplay.Systems;
 
 namespace FishingGame.UI
 {

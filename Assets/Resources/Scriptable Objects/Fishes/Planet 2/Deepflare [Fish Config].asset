@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c8089ea974ea2840970e549300af06a, type: 3}
-  m_Name: 'Anchovy [Fish Config]'
+  m_Name: 'Deepflare [Fish Config]'
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.FishConfigSO
-  Name: Anchovy
-  Description: It's an Anchovy!
+  Name: Deepflare
+  Description: It's a Deepflare!
   Rarity: 0
   Sprite: {fileID: 0}
+  SellValue: 100
+  ObjectID: Fish_1_0

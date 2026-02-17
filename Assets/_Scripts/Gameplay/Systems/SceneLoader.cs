@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 using FishingGame.UI;
 
-namespace FishingGame.Systems
+namespace FishingGame.Gameplay.Systems
 {
 	public class SceneLoader : MonoBehaviour
 	{

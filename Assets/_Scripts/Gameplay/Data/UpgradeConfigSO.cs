@@ -6,6 +6,7 @@ namespace FishingGame.Data
     public class UpgradeConfigSO : ScriptableObject
     {
         // VARIABLES
+        [Header("Settings")]
         public string Name;
         public string Description;
 
@@ -14,5 +15,8 @@ namespace FishingGame.Data
 
         [Space(5)]
         public float Price = 10f;
+
+        [Header("System")]
+        public string ObjectID;
     }
 }

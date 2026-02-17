@@ -1,13 +1,18 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-using FishingGame.Systems;
+using FishingGame.Gameplay.Systems;
 
 namespace FishingGame.UI
 {
     public class DebugButtonsUI : MonoBehaviour
     {
         // METHODS
+        public void PauseButton()
+        {
+            GameManager.Instance.Pause();
+        }
+
         public void LoadScene(string sceneName)
         {
             if (SceneLoader.Instance == null)
