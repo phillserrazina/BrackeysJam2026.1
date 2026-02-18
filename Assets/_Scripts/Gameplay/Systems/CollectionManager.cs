@@ -9,7 +9,7 @@ using FishingGame.Gameplay.Systems;
 public class CollectionManager : MonoBehaviour
 {
     [Header("References")]
-    private HashSet<string> collectedFish = new HashSet<string>();
+    private HashSet<string> collectedFish = new();
 
     public event Action<FishConfigSO> OnFishDiscovered;
     public static CollectionManager Instance { get; private set; }
@@ -84,15 +84,27 @@ public class CollectionManager : MonoBehaviour
     // =========================
     private void Save()
     {
-        CollectionSaveData data = new CollectionSaveData();
+        CollectionSaveData data = new();
         data.collectedFish.AddRange(collectedFish);
 
         CollectionSaveSystem.Save(data);
+
+        Debug.Log($"CollectionManager::Save() --- Data saved successfuly. Fish collected: {collectedFish.Count}");
     }
 
     private void Load()
     {
         var data = CollectionSaveSystem.Load();
-        collectedFish = new HashSet<string>(data.collectedFish);
+        collectedFish = new(data.collectedFish);
+
+        Debug.Log($"CollectionManager::Load() --- Data loaded successfuly. Fish collected: {collectedFish.Count}");
+    }
+
+    public void Delete()
+    {
+        collectedFish = new();
+        CollectionSaveSystem.Delete();
+
+        Debug.Log($"CollectionManager::Delete() --- Data deleted successfuly. Fish collected: {collectedFish.Count}");
     }
 }

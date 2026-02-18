@@ -57,7 +57,7 @@ namespace FishingGame.Gameplay.Systems
                 collectionMenu = FindFirstObjectByType<CollectionMenuUI>(FindObjectsInactive.Include);
             }
 
-            collectionMenu.gameObject.SetActive(!collectionMenu.gameObject.activeSelf);
+            collectionMenu.TriggerVisibility();
         }
 
         // METHODS

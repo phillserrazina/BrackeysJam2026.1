@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.UpgradeConfigSO
   Name: Example Upgrade
   Description: Example Upgrade
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   Price: 10
   ObjectID: Upgrade_0
