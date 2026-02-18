@@ -1,22 +1,21 @@
 using System;
 using System.Collections.Generic;
+
 using UnityEngine;
+
 using FishingGame.Data;
+using FishingGame.Gameplay.Systems;
 
 public class CollectionManager : MonoBehaviour
 {
-    public static CollectionManager Instance;
-
     [Header("References")]
-    public FishDatabaseSO database;
-
-    private HashSet<string> collectedFish = new HashSet<string>();
+    private HashSet<string> collectedFish = new();
 
     public event Action<FishConfigSO> OnFishDiscovered;
+    public static CollectionManager Instance { get; private set; }
 
     private void Awake()
     {
-        // Singleton
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -27,15 +26,11 @@ public class CollectionManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         Load();
-
-        if (database != null)
-            database.Init();
     }
 
     // =========================
     // PUBLIC API
     // =========================
-
     public void RegisterCatch(FishConfigSO fish)
     {
         if (fish == null) return;
@@ -72,11 +67,11 @@ public class CollectionManager : MonoBehaviour
 
     public List<FishConfigSO> GetAllCollected()
     {
-        List<FishConfigSO> list = new List<FishConfigSO>();
+        List<FishConfigSO> list = new();
 
         foreach (var id in collectedFish)
         {
-            var fish = database.Get(id);
+            var fish = DataManager.Instance.GetFishByID(id);
             if (fish != null)
                 list.Add(fish);
         }
@@ -84,26 +79,32 @@ public class CollectionManager : MonoBehaviour
         return list;
     }
 
-    public List<FishConfigSO> GetAllFish()
-    {
-        return database.allFish;
-    }
-
     // =========================
     // SAVE / LOAD
     // =========================
-
     private void Save()
     {
-        CollectionSaveData data = new CollectionSaveData();
+        CollectionSaveData data = new();
         data.collectedFish.AddRange(collectedFish);
 
         CollectionSaveSystem.Save(data);
+
+        Debug.Log($"CollectionManager::Save() --- Data saved successfuly. Fish collected: {collectedFish.Count}");
     }
 
     private void Load()
     {
         var data = CollectionSaveSystem.Load();
-        collectedFish = new HashSet<string>(data.collectedFish);
+        collectedFish = new(data.collectedFish);
+
+        Debug.Log($"CollectionManager::Load() --- Data loaded successfuly. Fish collected: {collectedFish.Count}");
+    }
+
+    public void Delete()
+    {
+        collectedFish = new();
+        CollectionSaveSystem.Delete();
+
+        Debug.Log($"CollectionManager::Delete() --- Data deleted successfuly. Fish collected: {collectedFish.Count}");
     }
 }

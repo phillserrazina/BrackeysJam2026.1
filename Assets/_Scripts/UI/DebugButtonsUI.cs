@@ -28,5 +28,10 @@ namespace FishingGame.UI
         {
             PlayerManager.Instance.ChangeEnvironment(envName);
         }
+
+        public void DeleteData()
+        {
+            CollectionManager.Instance.Delete();
+        }
     }
 }

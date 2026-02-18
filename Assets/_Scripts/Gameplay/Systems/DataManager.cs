@@ -14,6 +14,8 @@ namespace FishingGame.Gameplay.Systems
         [SerializeField] private PlanetConfigSO[] planetArray;
         [SerializeField] private UpgradeConfigSO[] upgradesArray;
 
+        public FishConfigSO[] AllFishes => fishArray;
+
         public static DataManager Instance { get; private set; }
 
         // EXECUTION FUNCTIONS
