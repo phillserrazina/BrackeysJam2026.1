@@ -38,14 +38,13 @@ namespace FishingGame.Gameplay.Systems
 
         private bool catchBarIsMoving = false;
 
-        private PlayerWallet playerWallet;
-
+        private PlayerManager player;
         private FishConfigSO currentFish;
 
         // EXECUTION FUNCTIONS
         private void Start()
         {
-            playerWallet = PlayerManager.Instance.Wallet;
+            player = PlayerManager.Instance;
         }
 
         private void Update()
@@ -82,6 +81,9 @@ namespace FishingGame.Gameplay.Systems
             currentCatchBarSize = catchBarSizes[(int)currentFish.Rarity];
             currentCatchBarSpeed = catchBarSpeeds[(int)currentFish.Rarity];
             currentFishSpeed = fishSpeeds[(int)currentFish.Rarity];
+
+            currentCatchBarSize = player.GetUpgradeModifiedValue(UpgradeTypes.IncreaseCatchBarSize, currentCatchBarSize);
+            currentFishSpeed = player.GetUpgradeModifiedValue(UpgradeTypes.ReduceFishSpeed, currentFishSpeed);
 
             Vector3 catchBarDelta = catchBar.sizeDelta;
             catchBarDelta.y = currentCatchBarSize;
@@ -149,7 +151,7 @@ namespace FishingGame.Gameplay.Systems
             if (currentProgress >= 1f)
             {
                 gameObject.SetActive(false);
-                playerWallet.Add(CurrencyTypes.Gold, currentFish.SellValue);
+                player.Wallet.Add(CurrencyTypes.Gold, currentFish.SellValue);
 
                 CollectionManager.Instance.RegisterCatch(currentFish);
             }

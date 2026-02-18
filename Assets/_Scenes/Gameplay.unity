@@ -241,6 +241,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Systems.PlayerManager
   fishingController: {fileID: 1689600080}
+  debugUpgrades:
+  - {fileID: 11400000, guid: 52b6fe2020e22164daf162dc399fb909, type: 2}
+  - {fileID: 11400000, guid: 40d74531c503c8243aee2cd30593d91f, type: 2}
 --- !u!114 &400184382
 MonoBehaviour:
   m_ObjectHideFlags: 0

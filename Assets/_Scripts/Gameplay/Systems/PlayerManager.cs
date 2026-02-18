@@ -11,7 +11,11 @@ namespace FishingGame.Gameplay.Systems
         // VARIABLES
         [SerializeField] private PlayerFishingController fishingController;
 
+        [Header("Debug")]
+        [SerializeField] private UpgradeConfigSO[] debugUpgrades;
+
         public PlayerWallet Wallet { get; private set; }
+        public PlayerUpgradesHandler Upgrades { get; private set; }
         private CollectionMenuUI collectionMenu;
 
         public static PlayerManager Instance { get; private set; }
@@ -21,6 +25,12 @@ namespace FishingGame.Gameplay.Systems
         {
             Instance = this;
             Wallet = new();
+            Upgrades = new();
+
+            foreach (var upgrade in debugUpgrades)
+            {
+                Upgrades.Add(upgrade);
+            }
         }
 
         private void Start()
@@ -67,6 +77,11 @@ namespace FishingGame.Gameplay.Systems
             {
                 
             });
+        }
+
+        public float GetUpgradeModifiedValue(UpgradeTypes upgradeType, float value)
+        {
+            return Upgrades.GetModifiedValue(upgradeType, value);
         }
     }
 }
