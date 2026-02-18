@@ -1,8 +1,8 @@
-using FishingGame.Data;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-using FishingGame.Gameplay.Systems;
+using FishingGame.UI;
+using FishingGame.Data;
 
 namespace FishingGame.Gameplay.Systems
 {
@@ -12,6 +12,7 @@ namespace FishingGame.Gameplay.Systems
         [SerializeField] private PlayerFishingController fishingController;
 
         public PlayerWallet Wallet { get; private set; }
+        private CollectionMenuUI collectionMenu;
 
         public static PlayerManager Instance { get; private set; }
 
@@ -47,6 +48,16 @@ namespace FishingGame.Gameplay.Systems
         private void OnPause(InputValue input)
         {
             GameManager.Instance.TriggerPause();
+        }
+
+        private void OnCollection(InputValue input)
+        {
+            if (collectionMenu == null)
+            {
+                collectionMenu = FindFirstObjectByType<CollectionMenuUI>(FindObjectsInactive.Include);
+            }
+
+            collectionMenu.gameObject.SetActive(!collectionMenu.gameObject.activeSelf);
         }
 
         // METHODS

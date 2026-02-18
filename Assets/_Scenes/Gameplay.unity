@@ -505,7 +505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 648c57168e4424543ab0c1ece61de7b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectionManager
-  database: {fileID: 11400000, guid: 77dc4f28e4b68a14689dbbea4083ad6f, type: 2}
 --- !u!1 &942014861
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,10 +963,25 @@ MonoBehaviour:
   fishIndicator: {fileID: 2024836954}
   catchBar: {fileID: 995945857}
   progressBar: {fileID: 1056820166}
-  catchBarSize: 150
-  catchBarSpeed: 250
+  catchBarSizes:
+  - 150
+  - 125
+  - 100
+  - 75
+  - 50
+  catchBarSpeeds:
+  - 250
+  - 250
+  - 250
+  - 250
+  - 250
   gravity: 800
-  fishSpeed: 200
+  fishSpeeds:
+  - 200
+  - 300
+  - 400
+  - 500
+  - 600
   progressFillRate: 0.3
   progressDepleteRate: 0.15
 --- !u!1 &1886777118

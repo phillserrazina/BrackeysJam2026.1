@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.FishConfigSO
   Name: Anchovy
   Description: It's an Anchovy!
-  Rarity: 0
+  Rarity: 4
   Sprite: {fileID: 0}
   SellValue: 10
   ObjectID: Fish_0_0
