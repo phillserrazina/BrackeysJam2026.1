@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,16 +17,20 @@ namespace FishingGame.Gameplay.Systems
         [SerializeField] private Image progressBar;
 
         [Header("Catch Bar Settings")]
-        [SerializeField] private float catchBarSize = 150f;
-        [SerializeField] private float catchBarSpeed = 500f;
+        [SerializeField] private List<float> catchBarSizes = new();
+        [SerializeField] private List<float> catchBarSpeeds = new();
         [SerializeField] private float gravity = 800f;
         
         [Header("Fish Settings")]
-        [SerializeField] private float fishSpeed = 200f;
+        [SerializeField] private List<float> fishSpeeds = new();
 
         [Header("Progress Settings")]
         [SerializeField] private float progressFillRate = 0.5f;
         [SerializeField] private float progressDepleteRate = 0.3f;
+
+        private float currentCatchBarSize;
+        private float currentCatchBarSpeed;
+        private float currentFishSpeed;
 
         private float currentFishTarget;
         private float currentProgress = 0f;
@@ -63,7 +69,7 @@ namespace FishingGame.Gameplay.Systems
 
             gameObject.SetActive(true);
 
-            Debug.Log($"PlayerFishingController::BeginFishing() --- Begin fishing {fishConfig.Name}");
+            Debug.Log($"PlayerFishingController::BeginFishing() --- Begin fishing {fishConfig.Name} (Diff: {(int)fishConfig.Rarity})");
         }
 
         public void SetCatchBarMovementActive(bool isActive)
@@ -73,8 +79,12 @@ namespace FishingGame.Gameplay.Systems
 
         private void UpdateFishingSettings()
         {
+            currentCatchBarSize = catchBarSizes[(int)currentFish.Rarity];
+            currentCatchBarSpeed = catchBarSpeeds[(int)currentFish.Rarity];
+            currentFishSpeed = fishSpeeds[(int)currentFish.Rarity];
+
             Vector3 catchBarDelta = catchBar.sizeDelta;
-            catchBarDelta.y = catchBarSize;
+            catchBarDelta.y = currentCatchBarSize;
             catchBar.sizeDelta = catchBarDelta;
         }
 
@@ -82,7 +92,7 @@ namespace FishingGame.Gameplay.Systems
         {
             if (catchBarIsMoving)
             {
-                currentCatchBarVerticalVelocity = catchBarSpeed;
+                currentCatchBarVerticalVelocity = currentCatchBarSpeed;
             }
             else
             {
@@ -117,7 +127,7 @@ namespace FishingGame.Gameplay.Systems
 
             float direction = Mathf.Sign(currentFishTarget - fishIndicator.anchoredPosition.y);
             Vector2 fishPos = fishIndicator.anchoredPosition;
-            fishPos.y += direction * fishSpeed * Time.deltaTime;
+            fishPos.y += direction * currentFishSpeed * Time.deltaTime;
             fishIndicator.anchoredPosition = fishPos;
         }
 
