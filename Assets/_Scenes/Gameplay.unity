@@ -459,6 +459,7 @@ Transform:
   - {fileID: 942014862}
   - {fileID: 713111266}
   - {fileID: 910664790}
+  - {fileID: 2141339254}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &910664789
@@ -1057,6 +1058,57 @@ RectTransform:
   m_AnchoredPosition: {x: -10, y: 0}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2141339253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2141339254}
+  - component: {fileID: 2141339255}
+  m_Layer: 0
+  m_Name: Progression System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2141339254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141339253}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 769911791}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2141339255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141339253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a38c07ef15f0d44ca88bd30238513c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Gameplay.Systems.ProgressionSystem
+  steps:
+  - Planet: {fileID: 11400000, guid: c6613a12ea10df241a56df629f11cd9c, type: 2}
+    Fish: {fileID: 11400000, guid: aff64b9b8f5004540ad1132a14ed3aef, type: 2}
+    SceneName: Earth
+  - Planet: {fileID: 11400000, guid: 0b5a9c8c6ef7f6a4f81028c14028127e, type: 2}
+    Fish: {fileID: 11400000, guid: 247b409f96e9bee4783d6afe8024ac0d, type: 2}
+    SceneName: Planet 2
 --- !u!1001 &8974492642885519669
 PrefabInstance:
   m_ObjectHideFlags: 0
