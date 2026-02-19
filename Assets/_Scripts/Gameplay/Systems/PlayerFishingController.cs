@@ -6,10 +6,11 @@ using UnityEngine.UI;
 
 using FishingGame.Data;
 using DG.Tweening;
+using TMPro;
 
 namespace FishingGame.Gameplay.Systems
 {
-    public enum FishingStates { Idle, Casting, Fishing, CatchInputWindow, Catching }
+    public enum FishingStates { Idle, Casting, Fishing, CatchInputWindow, Catching, PostCatch }
 
     public class PlayerFishingController : MonoBehaviour
     {
@@ -24,6 +25,9 @@ namespace FishingGame.Gameplay.Systems
         [SerializeField] private float castingFillSpeed = 1f;
 
         [Header("Fishing")]
+        [SerializeField] private GameObject waterRippleObject;
+        [SerializeField] private GameObject biteWarningObject;
+
         [SerializeField] private float minFishingWaitTime = 2f;
         [SerializeField] private float maxFishingWaitTime = 10f;
 
@@ -111,6 +115,11 @@ namespace FishingGame.Gameplay.Systems
         }
 
         // METHODS
+        private void ChangeToState(FishingStates state)
+        {
+            currentState = state;
+        }
+
         public void OnFishingInput(bool isPressed)
         {
             switch (currentState)
@@ -128,9 +137,12 @@ namespace FishingGame.Gameplay.Systems
                     }
                     break;
                 case FishingStates.Fishing:
-                    EndCatching();
+                    EndFishing();
                     break;
                 case FishingStates.CatchInputWindow:
+                    currentFishingWaitTime = 0f;
+                    currentCatchWindowTime = 0f;
+
                     PlanetConfigSO currentPlanet = LocationManager.Instance.CurrentLocation;
                     FishConfigSO randomFish = DataManager.Instance.GetRandomFishData(currentPlanet);
 
@@ -157,7 +169,7 @@ namespace FishingGame.Gameplay.Systems
 
             targetFishingWaitTime = Random.Range(minFishingWaitTime, maxFishingWaitTime);
 
-            currentState = FishingStates.Casting;
+            ChangeToState(FishingStates.Casting);
         }
 
         public void ReleaseCastHold()
@@ -169,7 +181,8 @@ namespace FishingGame.Gameplay.Systems
             DOVirtual.DelayedCall(0.6f, () =>
             {
                 castingUI.SetActive(false);
-                currentState = FishingStates.Fishing;
+                ChangeToState(FishingStates.Fishing);
+                waterRippleObject.SetActive(true);
             });
         }
 
@@ -186,9 +199,9 @@ namespace FishingGame.Gameplay.Systems
 
             if (currentFishingWaitTime >= targetFishingWaitTime)
             {
-                Debug.Log("CATCH!!");
+                biteWarningObject.SetActive(true);
                 currentCatchWindowTime = catchWindowTime;
-                currentState = FishingStates.CatchInputWindow;
+                ChangeToState(FishingStates.CatchInputWindow);
             }
         }
 
@@ -198,13 +211,21 @@ namespace FishingGame.Gameplay.Systems
 
             if (currentCatchWindowTime <= 0f)
             {
-                currentState = FishingStates.Fishing;
+                currentFishingWaitTime = 0f;
+                currentCatchWindowTime = 0f;
+                targetFishingWaitTime = Random.Range(minFishingWaitTime, maxFishingWaitTime);
+
+                ChangeToState(FishingStates.Fishing);
+                biteWarningObject.SetActive(false);
             }
         }
 
         public void BeginCatching(FishConfigSO fishConfig)
         {
-            currentState = FishingStates.Catching;
+            playerAnimator.Play("Struggling Start");
+
+            biteWarningObject.SetActive(false);
+            ChangeToState(FishingStates.Catching);
 
             currentFish = fishConfig;
             fishIndicator.GetComponentInChildren<Image>().sprite = fishConfig.Sprite;
@@ -297,27 +318,46 @@ namespace FishingGame.Gameplay.Systems
         {
             if (currentProgress >= 1f)
             {
-                player.Wallet.Add(CurrencyTypes.Gold, currentFish.SellValue);
-                CollectionManager.Instance.RegisterCatch(currentFish);
-
-                EndCatching();
+                OnCatchEnd(true);
             }
             else if (currentProgress <= 0f)
             {
-                EndCatching();
+                OnCatchEnd(false);
             }
         }
 
-        private void EndCatching()
+        private void OnCatchEnd(bool success)
         {
+            if (success)
+            {
+                player.Wallet.Add(CurrencyTypes.Gold, currentFish.SellValue);
+                CollectionManager.Instance.RegisterCatch(currentFish);
+            }
+
+            castingUI.SetActive(false);
+            fishingUI.SetActive(false);
+
+            currentFish = null;
+            waterRippleObject.SetActive(false);
+
+            playerAnimator.SetBool("Success", success);
+            playerAnimator.Play("Struggling End");
+
+            ChangeToState(FishingStates.PostCatch);
+        }
+
+        private void EndFishing()
+        {
+            castingUI.SetActive(false);
             fishingUI.SetActive(false);
             playerAnimator.Play("Idle");
 
             currentFish = null;
+            waterRippleObject.SetActive(false);
 
             DOVirtual.DelayedCall(0.1f, () =>
             {
-                currentState = FishingStates.Idle;
+                ChangeToState(FishingStates.Idle);
             });
         }
 
