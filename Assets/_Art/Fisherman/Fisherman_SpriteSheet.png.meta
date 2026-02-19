@@ -1,0 +1,1627 @@
+fileFormatVersion: 2
+guid: 5223745d51d3b8c4dad088530df5c024
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5315691550965960018
+    second: Fisherman-IdleCastFish_0
+  - first:
+      213: -127094167000930996
+    second: Fisherman-IdleCastFish_1
+  - first:
+      213: -552304182823599836
+    second: Fisherman-IdleCastFish_2
+  - first:
+      213: 7318346178923138672
+    second: Fisherman-IdleCastFish_3
+  - first:
+      213: 2753873568111110981
+    second: Fisherman-IdleCastFish_4
+  - first:
+      213: -4561126435424355243
+    second: Fisherman-IdleCastFish_5
+  - first:
+      213: -4455574017914314834
+    second: Fisherman-IdleCastFish_6
+  - first:
+      213: -3330800533369755446
+    second: Fisherman-IdleCastFish_7
+  - first:
+      213: 2178104605446800682
+    second: Fisherman-IdleCastFish_8
+  - first:
+      213: -6596422269519093891
+    second: Fisherman-IdleCastFish_9
+  - first:
+      213: 1139474159637494230
+    second: Fisherman-IdleCastFish_10
+  - first:
+      213: -2217024971304859861
+    second: Fisherman-IdleCastFish_11
+  - first:
+      213: 6058545227966027902
+    second: Fisherman-IdleCastFish_12
+  - first:
+      213: 10057648361879083
+    second: Fisherman-IdleCastFish_13
+  - first:
+      213: 7151380745960220352
+    second: Fisherman-IdleCastFish_14
+  - first:
+      213: -235851875025834700
+    second: Fisherman-IdleCastFish_15
+  - first:
+      213: -1778055558690173472
+    second: Fisherman-IdleCastFish_16
+  - first:
+      213: -4116611993391186665
+    second: Fisherman-IdleCastFish_17
+  - first:
+      213: 1744988690161617740
+    second: Fisherman-IdleCastFish_18
+  - first:
+      213: -1086509680011497199
+    second: Fisherman-IdleCastFish_19
+  - first:
+      213: -3662210874416840031
+    second: Fisherman-IdleCastFish_20
+  - first:
+      213: 5829447235023193399
+    second: Fisherman-IdleCastFish_21
+  - first:
+      213: -2950654411525740180
+    second: Fisherman-IdleCastFish_22
+  - first:
+      213: -2146765855018447801
+    second: Fisherman-IdleCastFish_23
+  - first:
+      213: -3692986186316271344
+    second: Fisherman-IdleCastFish_24
+  - first:
+      213: -1096286351140449015
+    second: Fisherman-IdleCastFish_25
+  - first:
+      213: 4809792752447712058
+    second: Fisherman-IdleCastFish_26
+  - first:
+      213: 5785027488081434525
+    second: Fisherman-IdleCastFish_27
+  - first:
+      213: 6711613126540152579
+    second: Fisherman-IdleCastFish_28
+  - first:
+      213: -8084670461010470784
+    second: Fisherman-IdleCastFish_29
+  - first:
+      213: 5871026282637033689
+    second: Fisherman-IdleCastFish_30
+  - first:
+      213: 8037026195766305768
+    second: Fisherman-IdleCastFish_31
+  - first:
+      213: 1447221401089995777
+    second: Fisherman-IdleCastFish_32
+  - first:
+      213: 7103252655773826653
+    second: Fisherman-IdleCastFish_33
+  - first:
+      213: 4846280429332959324
+    second: Fisherman-IdleCastFish_34
+  - first:
+      213: -8410479265119674965
+    second: Fisherman-IdleCastFish_35
+  - first:
+      213: -2281566982933313603
+    second: Fisherman-IdleCastFish_36
+  - first:
+      213: -8662583450431724365
+    second: Fisherman-IdleCastFish_37
+  - first:
+      213: 2644209825829065281
+    second: Fisherman-IdleCastFish_38
+  - first:
+      213: 7044392153597618558
+    second: Fisherman-IdleCastFish_39
+  - first:
+      213: -6978545373113304823
+    second: Fisherman-IdleCastFish_40
+  - first:
+      213: -4722043304484620017
+    second: Fisherman-IdleCastFish_41
+  - first:
+      213: 1296321950402185402
+    second: Fisherman-IdleCastFish_42
+  - first:
+      213: 7315284789328297401
+    second: Fisherman-IdleCastFish_43
+  - first:
+      213: -5633004472572088465
+    second: Fisherman-IdleCastFish_44
+  - first:
+      213: -4258997931189442457
+    second: Fisherman-IdleCastFish_45
+  - first:
+      213: -5575004402429893854
+    second: Fisherman-IdleCastFish_46
+  - first:
+      213: 8265224436668000558
+    second: Fisherman-IdleCastFish_47
+  - first:
+      213: -1400471278596918809
+    second: Fisherman-IdleCastFish_48
+  - first:
+      213: -505554148659101423
+    second: Fisherman-IdleCastFish_49
+  - first:
+      213: -5060505775764240488
+    second: Fisherman-IdleCastFish_50
+  - first:
+      213: -4303666255999107388
+    second: Fisherman-IdleCastFish_51
+  - first:
+      213: -8333664211955661833
+    second: Fisherman-IdleCastFish_52
+  - first:
+      213: -4751090699917878234
+    second: Fisherman-IdleCastFish_53
+  - first:
+      213: -5844578144105861289
+    second: Fisherman-IdleCastFish_54
+  - first:
+      213: 6598170787996467715
+    second: Fisherman-IdleCastFish_55
+  - first:
+      213: 6293258484546237612
+    second: Fisherman-IdleCastFish_56
+  - first:
+      213: 4609607911819268859
+    second: Fisherman-IdleCastFish_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fisherman_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2f029b2beda36b0800000000000000
+      internalID: -5315691550965960018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45a2ea47887c3ef0800000000000000
+      internalID: -127094167000930996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42146de9542d558f0800000000000000
+      internalID: -552304182823599836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e0d02531dff8560800000000000000
+      internalID: 7318346178923138672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ba9976b69b73620800000000000000
+      internalID: 2753873568111110981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c33e04caf93b0c0800000000000000
+      internalID: -4561126435424355243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eafd1cf890f9a22c0800000000000000
+      internalID: -4455574017914314834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac860deef8e96c1d0800000000000000
+      internalID: -3330800533369755446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a258c4b399e2a3e10800000000000000
+      internalID: 2178104605446800682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f96dc25ecc474a0800000000000000
+      internalID: -6596422269519093891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d9fde306b930df00800000000000000
+      internalID: 1139474159637494230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27043fe88b8b31e0800000000000000
+      internalID: -2217024971304859861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e789d8809c6441450800000000000000
+      internalID: 6058545227966027902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b26b2edb06bb32000800000000000000
+      internalID: 10057648361879083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6e68816eece3360800000000000000
+      internalID: 7151380745960220352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43da97128f51abcf0800000000000000
+      internalID: -235851875025834700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed0d51d3e31357e0800000000000000
+      internalID: -1778055558690173472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d3ec7e33bded6c0800000000000000
+      internalID: -4116611993391186665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b4826e7f1773810800000000000000
+      internalID: 1744988690161617740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11134edd331fbe0f0800000000000000
+      internalID: -1086509680011497199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a2cfc9ec963d2dc0800000000000000
+      internalID: -3662210874416840031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735c070ef5b56e050800000000000000
+      internalID: 5829447235023193399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_22
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69a11a227b2d07d0800000000000000
+      internalID: -2950654411525740180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_23
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74c00b334d72532e0800000000000000
+      internalID: -2146765855018447801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_24
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011b13c31a0efbcc0800000000000000
+      internalID: -3692986186316271344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_25
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9051a2c3f5539c0f0800000000000000
+      internalID: -1096286351140449015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_26
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3be4e46601dfb240800000000000000
+      internalID: 4809792752447712058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_27
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d97d6fa99db884050800000000000000
+      internalID: 5785027488081434525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_28
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f46453490742d50800000000000000
+      internalID: 6711613126540152579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Idle_29
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 69
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0889065dc0b7dcf80800000000000000
+      internalID: -8084670461010470784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0009b4c431a7150800000000000000
+      internalID: 5871026282637033689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3e8293eb0498f60800000000000000
+      internalID: 8037026195766305768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104ff435230951410800000000000000
+      internalID: 1447221401089995777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5ebf31e7a2d39260800000000000000
+      internalID: 7103252655773826653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c509150bf52714340800000000000000
+      internalID: 4846280429332959324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: badd0c34ba9f74b80800000000000000
+      internalID: -8410479265119674965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db70003daee3650e0800000000000000
+      internalID: -2281566982933313603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4e6d78f3258c780800000000000000
+      internalID: -8662583450431724365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1429324b3de12b420800000000000000
+      internalID: 2644209825829065281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e792cb54755b2c160800000000000000
+      internalID: 7044392153597618558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909b2a205f9372f90800000000000000
+      internalID: -6978545373113304823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09be2e02aee77eb0800000000000000
+      internalID: -4722043304484620017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_12
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8834812f57df110800000000000000
+      internalID: 1296321950402185402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_13
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd3bb202cc158560800000000000000
+      internalID: 7315284789328297401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_14
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f6722f64c83d1b0800000000000000
+      internalID: -5633004472572088465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_15
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768645c52fff4e4c0800000000000000
+      internalID: -4258997931189442457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_16
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2236deb980b91a2b0800000000000000
+      internalID: -5575004402429893854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_17
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29697885d9f3b270800000000000000
+      internalID: 8265224436668000558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_18
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1f719cac6809ce0800000000000000
+      internalID: -1400471278596918809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_19
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111037a2e29ebf8f0800000000000000
+      internalID: -505554148659101423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_20
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89782c30fc875c9b0800000000000000
+      internalID: -5060505775764240488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Cast_21
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 35
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce765b875e4644c0800000000000000
+      internalID: -4303666255999107388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Fish-0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f34ff88d80e85c80800000000000000
+      internalID: -8333664211955661833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Fish_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c9bb74e2cb01eb0800000000000000
+      internalID: -4751090699917878234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Fish_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75fee82d423e3eea0800000000000000
+      internalID: -5844578144105861289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Fish_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30283e18f59619b50800000000000000
+      internalID: 6598170787996467715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Fish_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca47713af35265750800000000000000
+      internalID: 6293258484546237612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisherman_Fish_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf251d919fd98ff30800000000000000
+      internalID: 4609607911819268859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3833320eb0a27d146972c91f02c4cb86
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":30.0,"y":3.0},"gridSpriteSize":{"x":33.0,"y":34.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Fisherman_Cast_0: 5871026282637033689
+      Fisherman_Cast_1: 8037026195766305768
+      Fisherman_Cast_10: -6978545373113304823
+      Fisherman_Cast_11: -4722043304484620017
+      Fisherman_Cast_12: 1296321950402185402
+      Fisherman_Cast_13: 7315284789328297401
+      Fisherman_Cast_14: -5633004472572088465
+      Fisherman_Cast_15: -4258997931189442457
+      Fisherman_Cast_16: -5575004402429893854
+      Fisherman_Cast_17: 8265224436668000558
+      Fisherman_Cast_18: -1400471278596918809
+      Fisherman_Cast_19: -505554148659101423
+      Fisherman_Cast_2: 1447221401089995777
+      Fisherman_Cast_20: -5060505775764240488
+      Fisherman_Cast_21: -4303666255999107388
+      Fisherman_Cast_3: 7103252655773826653
+      Fisherman_Cast_4: 4846280429332959324
+      Fisherman_Cast_5: -8410479265119674965
+      Fisherman_Cast_6: -2281566982933313603
+      Fisherman_Cast_7: -8662583450431724365
+      Fisherman_Cast_8: 2644209825829065281
+      Fisherman_Cast_9: 7044392153597618558
+      Fisherman_Fish-0: -8333664211955661833
+      Fisherman_Fish_1: -4751090699917878234
+      Fisherman_Fish_2: -5844578144105861289
+      Fisherman_Fish_3: 6598170787996467715
+      Fisherman_Fish_4: 6293258484546237612
+      Fisherman_Fish_5: 4609607911819268859
+      Fisherman_Idle_0: -5315691550965960018
+      Fisherman_Idle_1: -127094167000930996
+      Fisherman_Idle_10: 1139474159637494230
+      Fisherman_Idle_11: -2217024971304859861
+      Fisherman_Idle_12: 6058545227966027902
+      Fisherman_Idle_13: 10057648361879083
+      Fisherman_Idle_14: 7151380745960220352
+      Fisherman_Idle_15: -235851875025834700
+      Fisherman_Idle_16: -1778055558690173472
+      Fisherman_Idle_17: -4116611993391186665
+      Fisherman_Idle_18: 1744988690161617740
+      Fisherman_Idle_19: -1086509680011497199
+      Fisherman_Idle_2: -552304182823599836
+      Fisherman_Idle_20: -3662210874416840031
+      Fisherman_Idle_21: 5829447235023193399
+      Fisherman_Idle_22: -2950654411525740180
+      Fisherman_Idle_23: -2146765855018447801
+      Fisherman_Idle_24: -3692986186316271344
+      Fisherman_Idle_25: -1096286351140449015
+      Fisherman_Idle_26: 4809792752447712058
+      Fisherman_Idle_27: 5785027488081434525
+      Fisherman_Idle_28: 6711613126540152579
+      Fisherman_Idle_29: -8084670461010470784
+      Fisherman_Idle_3: 7318346178923138672
+      Fisherman_Idle_4: 2753873568111110981
+      Fisherman_Idle_5: -4561126435424355243
+      Fisherman_Idle_6: -4455574017914314834
+      Fisherman_Idle_7: -3330800533369755446
+      Fisherman_Idle_8: 2178104605446800682
+      Fisherman_Idle_9: -6596422269519093891
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
