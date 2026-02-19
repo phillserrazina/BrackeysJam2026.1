@@ -1,20 +1,40 @@
+using System.Collections;
 using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.UI;
 
 using FishingGame.Data;
-using System.Collections;
+using DG.Tweening;
+using TMPro;
 
 namespace FishingGame.Gameplay.Systems
 {
+    public enum FishingStates { Idle, Casting, Fishing, CatchInputWindow, Catching, PostCatch }
+
     public class PlayerFishingController : MonoBehaviour
     {
         // VARIABLES
         [Header("References")]
         [SerializeField] private Animator playerAnimator;
+        [SerializeField] private GameObject castingUI;
+        [SerializeField] private GameObject fishingUI;
 
-        [Space(5)]
+        [Header("Casting")]
+        [SerializeField] private Image castingFillImage;
+        [SerializeField] private float castingFillSpeed = 1f;
+
+        [Header("Fishing")]
+        [SerializeField] private GameObject waterRippleObject;
+        [SerializeField] private GameObject biteWarningObject;
+
+        [SerializeField] private float minFishingWaitTime = 2f;
+        [SerializeField] private float maxFishingWaitTime = 10f;
+
+        [Header("Catch Window")]
+        [SerializeField] private float catchWindowTime = 1f;
+
+        [Header("Catching")]
         [SerializeField] private RectTransform fishingBarContainer;
         [SerializeField] private RectTransform fishIndicator;
         [SerializeField] private RectTransform catchBar;
@@ -45,6 +65,17 @@ namespace FishingGame.Gameplay.Systems
         private PlayerManager player;
         private FishConfigSO currentFish;
 
+        private float castingTime = 0f;
+        private float currentCastingFillSpeed = 0f;
+        private float currentCastingValue = 0f;
+
+        private float targetFishingWaitTime = 0f;
+        private float currentFishingWaitTime = 0f;
+
+        private float currentCatchWindowTime = 0f;
+
+        private FishingStates currentState = FishingStates.Idle;
+
         // EXECUTION FUNCTIONS
         private void Start()
         {
@@ -53,17 +84,148 @@ namespace FishingGame.Gameplay.Systems
 
         private void Update()
         {
-            UpdateFishingSettings();
-            HandleCatchBarMovement();
-            HandleFishMovement();
-            UpdateProgress();
-            CheckWinLose();
+            switch (currentState)
+            {
+                case FishingStates.Idle:
+                    break;
+                case FishingStates.Casting:
+                    HandleCasting();
+                    break;
+                case FishingStates.Fishing:
+                    HandleFishingWait();
+                    break;
+                case FishingStates.CatchInputWindow:
+                    HandleCatchWindow();
+                    break;
+                case FishingStates.Catching:
+                    if (currentFish == null)
+                    {
+                        return;
+                    }
+
+                    UpdateFishingSettings();
+                    HandleCatchBarMovement();
+                    HandleFishMovement();
+                    UpdateProgress();
+                    CheckWinLose();
+                    break;
+                default:
+                    break;
+            }
         }
 
         // METHODS
-        public void BeginFishing(FishConfigSO fishConfig)
+        private void ChangeToState(FishingStates state)
         {
-            playerAnimator.Play("Cast");
+            currentState = state;
+        }
+
+        public void OnFishingInput(bool isPressed)
+        {
+            switch (currentState)
+            {
+                case FishingStates.Idle:
+                    if (isPressed)
+                    {
+                        BeginCastHold();
+                    }
+                    break;
+                case FishingStates.Casting:
+                    if (!isPressed)
+                    {
+                        ReleaseCastHold();
+                    }
+                    break;
+                case FishingStates.Fishing:
+                    EndFishing();
+                    break;
+                case FishingStates.CatchInputWindow:
+                    currentFishingWaitTime = 0f;
+                    currentCatchWindowTime = 0f;
+
+                    PlanetConfigSO currentPlanet = LocationManager.Instance.CurrentLocation;
+                    FishConfigSO randomFish = DataManager.Instance.GetRandomFishData(currentPlanet);
+
+                    BeginCatching(randomFish);
+                    break;
+                case FishingStates.Catching:
+                    SetCatchBarMovementActive(isPressed);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        public void BeginCastHold()
+        {
+            currentCastingFillSpeed = castingFillSpeed;
+            playerAnimator.Play("Cast Start");
+
+            castingTime = 0f;
+            currentCastingValue = 0f;
+
+            fishingUI.SetActive(false);
+            castingUI.SetActive(true);
+
+            targetFishingWaitTime = Random.Range(minFishingWaitTime, maxFishingWaitTime);
+
+            ChangeToState(FishingStates.Casting);
+        }
+
+        public void ReleaseCastHold()
+        {
+            playerAnimator.Play("Cast End");
+
+            currentCastingFillSpeed = 0f;
+
+            DOVirtual.DelayedCall(0.6f, () =>
+            {
+                castingUI.SetActive(false);
+                ChangeToState(FishingStates.Fishing);
+                waterRippleObject.SetActive(true);
+            });
+        }
+
+        private void HandleCasting()
+        {
+            castingTime += Time.deltaTime * currentCastingFillSpeed;
+            currentCastingValue = Mathf.PingPong(castingTime, 1f);
+            castingFillImage.fillAmount = currentCastingValue;
+        }
+
+        private void HandleFishingWait()
+        {
+            currentFishingWaitTime += Time.deltaTime;
+
+            if (currentFishingWaitTime >= targetFishingWaitTime)
+            {
+                biteWarningObject.SetActive(true);
+                currentCatchWindowTime = catchWindowTime;
+                ChangeToState(FishingStates.CatchInputWindow);
+            }
+        }
+
+        private void HandleCatchWindow()
+        {
+            currentCatchWindowTime -= Time.deltaTime;
+
+            if (currentCatchWindowTime <= 0f)
+            {
+                currentFishingWaitTime = 0f;
+                currentCatchWindowTime = 0f;
+                targetFishingWaitTime = Random.Range(minFishingWaitTime, maxFishingWaitTime);
+
+                ChangeToState(FishingStates.Fishing);
+                biteWarningObject.SetActive(false);
+            }
+        }
+
+        public void BeginCatching(FishConfigSO fishConfig)
+        {
+            playerAnimator.Play("Struggling Start");
+
+            biteWarningObject.SetActive(false);
+            ChangeToState(FishingStates.Catching);
 
             currentFish = fishConfig;
             fishIndicator.GetComponentInChildren<Image>().sprite = fishConfig.Sprite;
@@ -73,17 +235,8 @@ namespace FishingGame.Gameplay.Systems
             currentProgress = 0.5f;
             progressBar.fillAmount = currentProgress;
 
+            fishingUI.SetActive(true);
             Debug.Log($"PlayerFishingController::BeginFishing() --- Begin fishing {fishConfig.Name} (Diff: {(int)fishConfig.Rarity})");
-
-            CoroutineRunner.Instance.StartCoroutine(BeginFishingCoroutine());
-        }
-
-        private IEnumerator BeginFishingCoroutine()
-        {
-            yield return new WaitForSeconds(0.5f);
-            yield return new WaitWhile(() => playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Cast"));
-
-            gameObject.SetActive(true);
         }
 
         public void SetCatchBarMovementActive(bool isActive)
@@ -165,17 +318,56 @@ namespace FishingGame.Gameplay.Systems
         {
             if (currentProgress >= 1f)
             {
-                gameObject.SetActive(false);
-                player.Wallet.Add(CurrencyTypes.Gold, currentFish.SellValue);
-
-                CollectionManager.Instance.RegisterCatch(currentFish);
-                playerAnimator.Play("Idle");
+                OnCatchEnd(true);
             }
             else if (currentProgress <= 0f)
             {
-                gameObject.SetActive(false);
-                playerAnimator.Play("Idle");
+                OnCatchEnd(false);
             }
+        }
+
+        private void OnCatchEnd(bool success)
+        {
+            if (success)
+            {
+                player.Wallet.Add(CurrencyTypes.Gold, currentFish.SellValue);
+                CollectionManager.Instance.RegisterCatch(currentFish);
+            }
+
+            castingUI.SetActive(false);
+            fishingUI.SetActive(false);
+
+            currentFish = null;
+            waterRippleObject.SetActive(false);
+
+            playerAnimator.SetBool("Success", success);
+            playerAnimator.Play("Struggling End");
+
+            ChangeToState(FishingStates.PostCatch);
+            StartCoroutine(CatchEndCoroutine());
+        }
+
+        private IEnumerator CatchEndCoroutine()
+        {
+            yield return new WaitForSeconds(0.2f);
+            yield return new WaitUntil(() => playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle"));
+
+            EndFishing();
+        }
+
+        private void EndFishing()
+        {
+            castingUI.SetActive(false);
+            fishingUI.SetActive(false);
+            playerAnimator.Play("Idle");
+
+            currentFish = null;
+            waterRippleObject.SetActive(false);
+
+            DOVirtual.DelayedCall(0.1f, () =>
+            {
+                ChangeToState(FishingStates.Idle);
+            });
         }
 
         private void ResetCatchBarPosition()
