@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: Deepflare
   Description: It's a Deepflare!
   Rarity: 0
-  Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  Sprite: {fileID: -8833646000751588566, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
   SellValue: 100
   ObjectID: Fish_1_0

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 using FishingGame.Data;
+using System.Collections;
 
 namespace FishingGame.Gameplay.Systems
 {
@@ -11,6 +12,9 @@ namespace FishingGame.Gameplay.Systems
     {
         // VARIABLES
         [Header("References")]
+        [SerializeField] private Animator playerAnimator;
+
+        [Space(5)]
         [SerializeField] private RectTransform fishingBarContainer;
         [SerializeField] private RectTransform fishIndicator;
         [SerializeField] private RectTransform catchBar;
@@ -59,16 +63,27 @@ namespace FishingGame.Gameplay.Systems
         // METHODS
         public void BeginFishing(FishConfigSO fishConfig)
         {
+            playerAnimator.Play("Cast");
+
             currentFish = fishConfig;
+            fishIndicator.GetComponentInChildren<Image>().sprite = fishConfig.Sprite;
 
             ResetCatchBarPosition();
-
+            
             currentProgress = 0.5f;
             progressBar.fillAmount = currentProgress;
 
-            gameObject.SetActive(true);
-
             Debug.Log($"PlayerFishingController::BeginFishing() --- Begin fishing {fishConfig.Name} (Diff: {(int)fishConfig.Rarity})");
+
+            CoroutineRunner.Instance.StartCoroutine(BeginFishingCoroutine());
+        }
+
+        private IEnumerator BeginFishingCoroutine()
+        {
+            yield return new WaitForSeconds(0.5f);
+            yield return new WaitWhile(() => playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Cast"));
+
+            gameObject.SetActive(true);
         }
 
         public void SetCatchBarMovementActive(bool isActive)
@@ -154,10 +169,12 @@ namespace FishingGame.Gameplay.Systems
                 player.Wallet.Add(CurrencyTypes.Gold, currentFish.SellValue);
 
                 CollectionManager.Instance.RegisterCatch(currentFish);
+                playerAnimator.Play("Idle");
             }
             else if (currentProgress <= 0f)
             {
                 gameObject.SetActive(false);
+                playerAnimator.Play("Idle");
             }
         }
 
