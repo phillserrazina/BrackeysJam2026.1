@@ -15,6 +15,11 @@ namespace FishingGame.Gameplay.Systems
             ownedUpgrades.Add(upgrade);
         }
 
+        public bool Has(UpgradeConfigSO upgrade)
+        {
+            return ownedUpgrades.Contains(upgrade);
+        }
+
         public void Clear()
         {
             ownedUpgrades.Clear();

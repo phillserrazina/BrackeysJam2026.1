@@ -17,6 +17,7 @@ namespace FishingGame.Gameplay.Systems
         public PlayerWallet Wallet { get; private set; }
         public PlayerUpgradesHandler Upgrades { get; private set; }
         private CollectionMenuUI collectionMenu;
+        private UpgradesMenuUI upgradesMenu;
 
         public static PlayerManager Instance { get; private set; }
 
@@ -62,6 +63,16 @@ namespace FishingGame.Gameplay.Systems
             }
 
             collectionMenu.TriggerVisibility();
+        }
+
+        private void OnUpgrades(InputValue input)
+        {
+            if (upgradesMenu == null)
+            {
+                upgradesMenu = FindFirstObjectByType<UpgradesMenuUI>(FindObjectsInactive.Include);
+            }
+
+            upgradesMenu.TriggerVisibility();
         }
 
         // METHODS
