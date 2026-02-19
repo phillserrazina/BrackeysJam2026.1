@@ -344,6 +344,15 @@ namespace FishingGame.Gameplay.Systems
             playerAnimator.Play("Struggling End");
 
             ChangeToState(FishingStates.PostCatch);
+            StartCoroutine(CatchEndCoroutine());
+        }
+
+        private IEnumerator CatchEndCoroutine()
+        {
+            yield return new WaitForSeconds(0.2f);
+            yield return new WaitUntil(() => playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle"));
+
+            EndFishing();
         }
 
         private void EndFishing()
