@@ -60,9 +60,10 @@ namespace FishingGame.Gameplay.Systems
         public void BeginFishing(FishConfigSO fishConfig)
         {
             currentFish = fishConfig;
+            fishIndicator.GetComponentInChildren<Image>().sprite = fishConfig.Sprite;
 
             ResetCatchBarPosition();
-
+            
             currentProgress = 0.5f;
             progressBar.fillAmount = currentProgress;
 
