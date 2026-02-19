@@ -38,21 +38,15 @@ namespace FishingGame.Gameplay.Systems
             Application.targetFrameRate = 60;
         }
 
-        private void Update()
+        // INPUT
+        private void OnCast(InputValue input)
         {
-            if (Keyboard.current.fKey.wasPressedThisFrame)
-            {
-                PlanetConfigSO currentPlanet = LocationManager.Instance.CurrentLocation;
-                FishConfigSO randomFish = DataManager.Instance.GetRandomFishData(currentPlanet);
-
-                fishingController.BeginFishing(randomFish);
-            }
+            fishingController.OnFishingInput(input.isPressed);
         }
 
-        // INPUT
         private void OnFish(InputValue input)
         {
-            fishingController.SetCatchBarMovementActive(input.isPressed);
+            fishingController.OnFishingInput(input.isPressed);
         }
 
         private void OnPause(InputValue input)
