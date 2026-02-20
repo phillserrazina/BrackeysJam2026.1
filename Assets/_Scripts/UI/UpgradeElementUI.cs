@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using TMPro;
 
 using FishingGame.Data;
@@ -7,11 +8,15 @@ using FishingGame.Gameplay.Systems;
 
 namespace FishingGame.UI
 {
-    public class UpgradeElementUI : MonoBehaviour
+    public class UpgradeElementUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         // VARIABLES
         [SerializeField] private Image iconImage;
         [SerializeField] private TMP_Text priceText;
+
+        [Header("Tooltip")]
+        [SerializeField] private TMP_Text tooltipText;
+        [SerializeField] private GameObject tooltipObject;
 
         private PlayerWallet playerWallet;
         private PlayerUpgradesHandler playerUpgrades;
@@ -53,6 +58,16 @@ namespace FishingGame.UI
             }
 
             iconImage.color = playerWallet.Get(CurrencyTypes.Gold) >= associatedUpgrade.Price ? Color.white : Color.black;
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

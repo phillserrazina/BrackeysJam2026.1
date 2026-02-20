@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.PlanetConfigSO
   Name: Planet 2
   Description: The Planet after earth
+  LuckModifier: 15
   Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   Fishes:
   - {fileID: 11400000, guid: 247b409f96e9bee4783d6afe8024ac0d, type: 2}
