@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 563a77968edf81b449e0a3ef3d2acac5, type: 3}
-  m_Name: '1. Bad Bait [Upgrade Config]'
+  m_Name: '6. Rod [Upgrade Config]'
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.UpgradeConfigSO
-  Name: Bad Bait
-  Description: +3 Luck
-  Attributes:
-  - Type: 0
-    Value: 3
-  Sprite: {fileID: -8333664211955661833, guid: 5223745d51d3b8c4dad088530df5c024, type: 3}
-  Price: 10
-  ObjectID: Upgrade_Bait_0
+  Name: Rod
+  Description: Increases how quickly stamina recovers
+  Type: 5
+  ValuePerLevel: 0
+  Sprite: {fileID: -1522347162890631716, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
+  PricePerLevel: 15
+  ObjectID: Upgrade_5

@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 563a77968edf81b449e0a3ef3d2acac5, type: 3}
-  m_Name: '2. Basic Bait [Upgrade Config]'
+  m_Name: '2. Line [Upgrade Config]'
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.UpgradeConfigSO
-  Name: Basic Bait
-  Description: +4 Luck
-  Attributes:
-  - Type: 0
-    Value: 4
-  Sprite: {fileID: 7098027336037313590, guid: d92e4033d455a1244be9b7c7139684f7, type: 3}
-  Price: 20
-  ObjectID: Upgrade_Bait_1
+  Name: Line
+  Description: How long the line can be strained without breaking
+  Type: 1
+  ValuePerLevel: 0
+  Sprite: {fileID: -1522347162890631716, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
+  PricePerLevel: 5
+  ObjectID: Upgrade_1

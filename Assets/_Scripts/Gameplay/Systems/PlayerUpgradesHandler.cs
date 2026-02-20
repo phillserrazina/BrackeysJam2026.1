@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 using FishingGame.Data;
@@ -31,12 +32,9 @@ namespace FishingGame.Gameplay.Systems
 
             foreach (var upgrade in ownedUpgrades)
             {
-                foreach (var attribute in upgrade.Attributes)
+                if (upgrade.Type == upgradeType)
                 {
-                    if (attribute.Type == upgradeType)
-                    {
-                        finalValue += attribute.Value;
-                    }
+                    finalValue += upgrade.ValuePerLevel;
                 }
             }
 

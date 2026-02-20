@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 563a77968edf81b449e0a3ef3d2acac5, type: 3}
-  m_Name: '4. Amazing Bait [Upgrade Config]'
+  m_Name: '4. Bait [Upgrade Config]'
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.UpgradeConfigSO
-  Name: Amazing Bait
-  Description: +6 Luck
-  Attributes:
-  - Type: 0
-    Value: 6
-  Sprite: {fileID: -5832347029781754893, guid: 2f4d0a6a3c0176d469804ded406f2bd6, type: 3}
-  Price: 40
-  ObjectID: Upgrade_Bait_3
+  Name: Bait
+  Description: Increases odds of appearing rarer fish
+  Type: 3
+  ValuePerLevel: 1
+  Sprite: {fileID: -1522347162890631716, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
+  PricePerLevel: 10
+  ObjectID: Upgrade_3

@@ -36,15 +36,16 @@ namespace FishingGame.UI
             iconImage.sprite = upgrade.Sprite;
 
             tooltipText.text = $"<size=15><b>{upgrade.Name}</b></size>\n<size=25>{upgrade.Description}</size>";
-            priceText.text = upgrade.Price.ToString("F0");
+            priceText.text = upgrade.PricePerLevel.ToString("F0");
 
             UpdateState();
         }
 
         public void Buy()
         {
-            if (playerWallet.Get(CurrencyTypes.Gold) >= associatedUpgrade.Price)
+            if (playerWallet.Get(CurrencyTypes.Gold) >= associatedUpgrade.PricePerLevel)
             {
+                playerWallet.Spend(CurrencyTypes.Gold, associatedUpgrade.PricePerLevel);
                 playerUpgrades.Add(associatedUpgrade);
                 UpdateState();
             }
@@ -52,13 +53,7 @@ namespace FishingGame.UI
 
         public void UpdateState()
         {
-            if (playerUpgrades.Has(associatedUpgrade))
-            {
-                gameObject.SetActive(false);
-                return;
-            }
-
-            iconImage.color = playerWallet.Get(CurrencyTypes.Gold) >= associatedUpgrade.Price ? Color.white : Color.black;
+            
         }
 
         public void OnPointerEnter(PointerEventData eventData)

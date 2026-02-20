@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 563a77968edf81b449e0a3ef3d2acac5, type: 3}
-  m_Name: 'Silver Rod [Upgrade Config]'
+  m_Name: '1. Stamina [Upgrade Config]'
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.UpgradeConfigSO
-  Name: Silver Rod
-  Description: First rod upgrade
-  Attributes:
-  - Type: 1
-    Value: 50
-  Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  Price: 10
-  ObjectID: Upgrade_Rod_0
+  Name: Stamina
+  Description: Increases how long you can reel a fish for
+  Type: 0
+  ValuePerLevel: 0
+  Sprite: {fileID: -1522347162890631716, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
+  PricePerLevel: 5
+  ObjectID: Upgrade_0

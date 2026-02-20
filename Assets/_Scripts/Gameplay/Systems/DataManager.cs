@@ -48,12 +48,12 @@ namespace FishingGame.Gameplay.Systems
         {
             Rarities randomRarity = GetRandomRarity(luckScore, location, new()
             {
-                new RarityConfig { Rarity = Rarities.Common,    BaseWeight = 10,   UnlockThreshold = 0,  ScalingFactor = 1 },
-                new RarityConfig { Rarity = Rarities.Uncommon,  BaseWeight = 3,    UnlockThreshold = 0,  ScalingFactor = 3  },
-                new RarityConfig { Rarity = Rarities.Rare,      BaseWeight = 0,    UnlockThreshold = 3,  ScalingFactor = 5  },
-                new RarityConfig { Rarity = Rarities.VeryRare,  BaseWeight = 0,    UnlockThreshold = 6,  ScalingFactor = 7  },
-                new RarityConfig { Rarity = Rarities.Legendary, BaseWeight = 0,    UnlockThreshold = 10, ScalingFactor = 9  },
-                new RarityConfig { Rarity = Rarities.Cosmic,    BaseWeight = 0,    UnlockThreshold = 15, ScalingFactor = 10  }
+                new RarityConfig { Rarity = Rarities.Common,    BaseWeight = 10,   ScalingFactor = 1 },
+                new RarityConfig { Rarity = Rarities.Uncommon,  BaseWeight = 5,    ScalingFactor = 3  },
+                new RarityConfig { Rarity = Rarities.Rare,      BaseWeight = 1,    ScalingFactor = 5  },
+                new RarityConfig { Rarity = Rarities.VeryRare,  BaseWeight = 0.5f,    ScalingFactor = 7  },
+                new RarityConfig { Rarity = Rarities.Legendary, BaseWeight = 0.1f,    ScalingFactor = 9  },
+                new RarityConfig { Rarity = Rarities.Cosmic,    BaseWeight = 0.001f,    ScalingFactor = 10  }
             });
 
             var matchingRarityFishes = location.Fishes.Where(fish => fish.Rarity == randomRarity).ToArray();
@@ -69,7 +69,7 @@ namespace FishingGame.Gameplay.Systems
 
             foreach (var rarityConfig in rarityConfigs)
             {
-                float weight = rarityConfig.BaseWeight + Mathf.Max(0, (luckScore - rarityConfig.UnlockThreshold - location.LuckModifier) * rarityConfig.ScalingFactor);
+                float weight = rarityConfig.BaseWeight + Mathf.Max(0, (luckScore - location.LuckModifier) * rarityConfig.ScalingFactor);
                 pool.Add((rarityConfig, weight));
                 total += weight;
             }
@@ -94,15 +94,7 @@ namespace FishingGame.Gameplay.Systems
             // VARIABLES
             public Rarities Rarity;
             public float BaseWeight = 0f;
-            public int UnlockThreshold = 0;
             public float ScalingFactor = 1f;
-
-            // METHODS
-            public float GetWeight(int luckScore)
-            {
-                float bonus = Mathf.Max(0, (luckScore - UnlockThreshold) * ScalingFactor);
-                return BaseWeight + bonus;
-            }
         }
     }
 }

@@ -253,7 +253,6 @@ namespace FishingGame.Gameplay.Systems
             currentFishSpeed = fishSpeeds[(int)currentFish.Rarity];
 
             currentCatchBarSize = player.GetUpgradeModifiedValue(UpgradeTypes.IncreaseCatchBarSize, currentCatchBarSize);
-            currentFishSpeed = player.GetUpgradeModifiedValue(UpgradeTypes.ReduceFishSpeed, currentFishSpeed);
 
             Vector3 catchBarDelta = catchBar.sizeDelta;
             catchBarDelta.y = currentCatchBarSize;
