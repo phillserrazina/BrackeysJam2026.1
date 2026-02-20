@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4c585fe50a34a964386aa45f96acfea3
+guid: c8de3e4bd221d68479e64a056038f97b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6250991695506894852
-    second: Earth_lady sprite_0
+      213: -5061636920739754815
+    second: upgrade_menu_white_lady_rendered_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,12 +100,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Earth_lady sprite_0
+      name: upgrade_menu_white_lady_rendered_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 320
+        width: 160
         height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cff056f0c240049a0800000000000000
-      internalID: -6250991695506894852
+      spriteID: 1cc0e4dc90471c9b0800000000000000
+      internalID: -5061636920739754815
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Earth_lady sprite_0: -6250991695506894852
+      upgrade_menu_white_lady_rendered_0: -5061636920739754815
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4c585fe50a34a964386aa45f96acfea3
+guid: 0c52674fb13554b4cbb2b119a6656283
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6250991695506894852
-    second: Earth_lady sprite_0
+      213: -5454097840212237653
+    second: Earth_pier_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Earth_lady sprite_0
+      name: Earth_pier_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 320
-        height: 180
+        width: 151
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cff056f0c240049a0800000000000000
-      internalID: -6250991695506894852
+      spriteID: ba2acef49e62f44b0800000000000000
+      internalID: -5454097840212237653
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Earth_lady sprite_0: -6250991695506894852
+      Earth_pier_0: -5454097840212237653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

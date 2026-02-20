@@ -33,5 +33,10 @@ namespace FishingGame.UI
         {
             CollectionManager.Instance.Delete();
         }
+
+        public void AddMoney(float value)
+        {
+            PlayerManager.Instance.Wallet.Add(CurrencyTypes.Gold, value);
+        }
     }
 }
