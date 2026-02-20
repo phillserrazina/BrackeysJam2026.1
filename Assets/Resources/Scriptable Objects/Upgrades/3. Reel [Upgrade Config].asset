@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: '3. Reel [Upgrade Config]'
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.UpgradeConfigSO
   Name: Reel
-  Description: Reel speed
+  Description: Increase reel speed
   Type: 2
-  ValuePerLevel: 0
+  ValuePerLevel: 0.02
+  MaxLevel: 10
   Sprite: {fileID: -1522347162890631716, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
   PricePerLevel: 5
   ObjectID: Upgrade_2

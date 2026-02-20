@@ -61,6 +61,9 @@ namespace FishingGame.Gameplay.Systems
         private float currentProgress = 0f;
         private float currentCatchBarVerticalVelocity = 0f;
 
+        private float currentProgressFillRate;
+        private float currentProgressDepleteRate;
+
         private bool catchBarIsMoving = false;
 
         private PlayerManager player;
@@ -252,6 +255,9 @@ namespace FishingGame.Gameplay.Systems
             currentCatchBarSpeed = catchBarSpeeds[(int)currentFish.Rarity];
             currentFishSpeed = fishSpeeds[(int)currentFish.Rarity];
 
+            currentProgressFillRate = player.GetUpgradeModifiedValue(UpgradeTypes.IncreaseReelSpeed, progressFillRate);
+            currentProgressDepleteRate = player.GetUpgradeModifiedValue(UpgradeTypes.ReduceReelDecay, progressDepleteRate);
+
             currentCatchBarSize = player.GetUpgradeModifiedValue(UpgradeTypes.IncreaseCatchBarSize, currentCatchBarSize);
 
             Vector3 catchBarDelta = catchBar.sizeDelta;
@@ -310,7 +316,7 @@ namespace FishingGame.Gameplay.Systems
 
             bool fishIsInsideCatchBar = fishY >= catchBarY - catchBarHeight / 2 && fishY <= catchBarY + catchBarHeight / 2;
             
-            currentProgress += (fishIsInsideCatchBar ? progressFillRate : -progressDepleteRate) * Time.deltaTime;
+            currentProgress += (fishIsInsideCatchBar ? currentProgressFillRate : -currentProgressDepleteRate) * Time.deltaTime;
             currentProgress = Mathf.Clamp01(currentProgress);
             progressBar.fillAmount = currentProgress;
         }
