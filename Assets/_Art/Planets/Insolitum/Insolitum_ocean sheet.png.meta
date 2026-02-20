@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 2bab0b5467bb1f14db600c5be9251f02
+guid: 76f72e6ec5a26364a8930bf79c42a884
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -662373938804574074
-    second: Earth_water overlay sheet_0
+      213: -5292586558742335530
+    second: Insolitum_ocean sheet_0
   - first:
-      213: 170583000612463376
-    second: Earth_water overlay sheet_1
+      213: -6747605206619109805
+    second: Insolitum_ocean sheet_1
   - first:
-      213: -7636024435522046397
-    second: Earth_water overlay sheet_2
+      213: 8279144345738476432
+    second: Insolitum_ocean sheet_2
   - first:
-      213: -8306281213659359349
-    second: Earth_water overlay sheet_3
-  - first:
-      213: 2717055547504637818
-    second: Earth_water overlay sheet_4
-  - first:
-      213: 5466169606356533628
-    second: Earth_water overlay sheet_5
-  - first:
-      213: 3346153313255905411
-    second: Earth_water overlay sheet_6
-  - first:
-      213: -404524241098400028
-    second: Earth_water overlay sheet_7
+      213: 4178578509949212945
+    second: Insolitum_ocean sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Earth_water overlay sheet_0
+      name: Insolitum_ocean sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -136,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 688b31d7966cec6f0800000000000000
-      internalID: -662373938804574074
+      spriteID: 6dfe72fe094fc86b0800000000000000
+      internalID: -5292586558742335530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Earth_water overlay sheet_1
+      name: Insolitum_ocean sheet_1
       rect:
         serializedVersion: 2
         x: 0
@@ -158,14 +146,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 013e934d5580e5200800000000000000
-      internalID: 170583000612463376
+      spriteID: 35644ee90d0bb52a0800000000000000
+      internalID: -6747605206619109805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Earth_water overlay sheet_2
+      name: Insolitum_ocean sheet_2
       rect:
         serializedVersion: 2
         x: 0
@@ -180,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3467188bb34670690800000000000000
-      internalID: -7636024435522046397
+      spriteID: 09bfcebeaed65e270800000000000000
+      internalID: 8279144345738476432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Earth_water overlay sheet_3
+      name: Insolitum_ocean sheet_3
       rect:
         serializedVersion: 2
         x: 0
@@ -202,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b875557ae392abc80800000000000000
-      internalID: -8306281213659359349
+      spriteID: 1199a97040b4df930800000000000000
+      internalID: 4178578509949212945
       vertices: []
       indices: 
       edges: []
@@ -212,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f8ec306b77e0d2b4f9533a3e59eb54b7
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -224,10 +212,10 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":4.0},"gridSpriteSize":{"x":320.0,"y":180.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Earth_water overlay sheet_0: -662373938804574074
-      Earth_water overlay sheet_1: 170583000612463376
-      Earth_water overlay sheet_2: -7636024435522046397
-      Earth_water overlay sheet_3: -8306281213659359349
+      Insolitum_ocean sheet_0: -5292586558742335530
+      Insolitum_ocean sheet_1: -6747605206619109805
+      Insolitum_ocean sheet_2: 8279144345738476432
+      Insolitum_ocean sheet_3: 4178578509949212945
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

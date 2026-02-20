@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 2bab0b5467bb1f14db600c5be9251f02
+guid: ac30a99968eddcf478b607be84ef5c21
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -662373938804574074
-    second: Earth_water overlay sheet_0
+      213: 2508671182231231377
+    second: Laeto_water Sheet_0
   - first:
-      213: 170583000612463376
-    second: Earth_water overlay sheet_1
+      213: 547541274733429381
+    second: Laeto_water Sheet_1
   - first:
-      213: -7636024435522046397
-    second: Earth_water overlay sheet_2
+      213: -3543179827648887271
+    second: Laeto_water Sheet_2
   - first:
-      213: -8306281213659359349
-    second: Earth_water overlay sheet_3
-  - first:
-      213: 2717055547504637818
-    second: Earth_water overlay sheet_4
-  - first:
-      213: 5466169606356533628
-    second: Earth_water overlay sheet_5
-  - first:
-      213: 3346153313255905411
-    second: Earth_water overlay sheet_6
-  - first:
-      213: -404524241098400028
-    second: Earth_water overlay sheet_7
+      213: 4180196557125463324
+    second: Laeto_water Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Earth_water overlay sheet_0
+      name: Laeto_water Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -136,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 688b31d7966cec6f0800000000000000
-      internalID: -662373938804574074
+      spriteID: 19bd623162790d220800000000000000
+      internalID: 2508671182231231377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Earth_water overlay sheet_1
+      name: Laeto_water Sheet_1
       rect:
         serializedVersion: 2
         x: 0
@@ -158,14 +146,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 013e934d5580e5200800000000000000
-      internalID: 170583000612463376
+      spriteID: 582c95c63e1499700800000000000000
+      internalID: 547541274733429381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Earth_water overlay sheet_2
+      name: Laeto_water Sheet_2
       rect:
         serializedVersion: 2
         x: 0
@@ -180,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3467188bb34670690800000000000000
-      internalID: -7636024435522046397
+      spriteID: 91688a528b814dec0800000000000000
+      internalID: -3543179827648887271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Earth_water overlay sheet_3
+      name: Laeto_water Sheet_3
       rect:
         serializedVersion: 2
         x: 0
@@ -202,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b875557ae392abc80800000000000000
-      internalID: -8306281213659359349
+      spriteID: c1d26cefe9a030a30800000000000000
+      internalID: 4180196557125463324
       vertices: []
       indices: 
       edges: []
@@ -212,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f8ec306b77e0d2b4f9533a3e59eb54b7
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -224,10 +212,10 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":4.0},"gridSpriteSize":{"x":320.0,"y":180.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Earth_water overlay sheet_0: -662373938804574074
-      Earth_water overlay sheet_1: 170583000612463376
-      Earth_water overlay sheet_2: -7636024435522046397
-      Earth_water overlay sheet_3: -8306281213659359349
+      Laeto_water Sheet_0: 2508671182231231377
+      Laeto_water Sheet_1: 547541274733429381
+      Laeto_water Sheet_2: -3543179827648887271
+      Laeto_water Sheet_3: 4180196557125463324
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

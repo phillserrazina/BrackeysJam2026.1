@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 2bab0b5467bb1f14db600c5be9251f02
+guid: 705c62aab204abc41bab67ac7181e3b4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -662373938804574074
-    second: Earth_water overlay sheet_0
+      213: 3125524983068322283
+    second: Cirrus_pier cloud overlay_0
   - first:
-      213: 170583000612463376
-    second: Earth_water overlay sheet_1
+      213: 8358616357594881879
+    second: Cirrus_pier cloud overlay_1
   - first:
-      213: -7636024435522046397
-    second: Earth_water overlay sheet_2
+      213: -7666061740439382398
+    second: Cirrus_pier cloud overlay_2
   - first:
-      213: -8306281213659359349
-    second: Earth_water overlay sheet_3
+      213: -3452679978843772846
+    second: Cirrus_pier cloud overlay_3
   - first:
-      213: 2717055547504637818
-    second: Earth_water overlay sheet_4
+      213: 1478839120848790314
+    second: Cirrus_pier cloud overlay_4
   - first:
-      213: 5466169606356533628
-    second: Earth_water overlay sheet_5
+      213: 5035166463001542589
+    second: Cirrus_pier cloud overlay_5
   - first:
-      213: 3346153313255905411
-    second: Earth_water overlay sheet_6
+      213: 3275679222121770923
+    second: Cirrus_pier cloud overlay_6
   - first:
-      213: -404524241098400028
-    second: Earth_water overlay sheet_7
+      213: 2121869068160410597
+    second: Cirrus_pier cloud overlay_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,7 +121,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Earth_water overlay sheet_0
+      name: Cirrus_pier cloud overlay_0
       rect:
         serializedVersion: 2
         x: 0
@@ -136,14 +136,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 688b31d7966cec6f0800000000000000
-      internalID: -662373938804574074
+      spriteID: be965609968106b20800000000000000
+      internalID: 3125524983068322283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Earth_water overlay sheet_1
+      name: Cirrus_pier cloud overlay_1
       rect:
         serializedVersion: 2
         x: 0
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 013e934d5580e5200800000000000000
-      internalID: 170583000612463376
+      spriteID: 75f56389a45cff370800000000000000
+      internalID: 8358616357594881879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Earth_water overlay sheet_2
+      name: Cirrus_pier cloud overlay_2
       rect:
         serializedVersion: 2
         x: 0
@@ -180,14 +180,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3467188bb34670690800000000000000
-      internalID: -7636024435522046397
+      spriteID: 286d5eea67dac9590800000000000000
+      internalID: -7666061740439382398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Earth_water overlay sheet_3
+      name: Cirrus_pier cloud overlay_3
       rect:
         serializedVersion: 2
         x: 0
@@ -202,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b875557ae392abc80800000000000000
-      internalID: -8306281213659359349
+      spriteID: 258e9e13add9510d0800000000000000
+      internalID: -3452679978843772846
       vertices: []
       indices: 
       edges: []
@@ -212,7 +212,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f8ec306b77e0d2b4f9533a3e59eb54b7
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -224,10 +224,10 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":4.0},"gridSpriteSize":{"x":320.0,"y":180.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Earth_water overlay sheet_0: -662373938804574074
-      Earth_water overlay sheet_1: 170583000612463376
-      Earth_water overlay sheet_2: -7636024435522046397
-      Earth_water overlay sheet_3: -8306281213659359349
+      Cirrus_pier cloud overlay_0: 3125524983068322283
+      Cirrus_pier cloud overlay_1: 8358616357594881879
+      Cirrus_pier cloud overlay_2: -7666061740439382398
+      Cirrus_pier cloud overlay_3: -3452679978843772846
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

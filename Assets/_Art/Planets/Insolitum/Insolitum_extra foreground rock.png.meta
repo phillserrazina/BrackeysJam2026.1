@@ -1,31 +1,13 @@
 fileFormatVersion: 2
-guid: 2bab0b5467bb1f14db600c5be9251f02
+guid: 319ae4ebf81150d4db471098d8415328
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -662373938804574074
-    second: Earth_water overlay sheet_0
+      213: 6465295877411030726
+    second: Insolitum_extra foreground rock_0
   - first:
-      213: 170583000612463376
-    second: Earth_water overlay sheet_1
-  - first:
-      213: -7636024435522046397
-    second: Earth_water overlay sheet_2
-  - first:
-      213: -8306281213659359349
-    second: Earth_water overlay sheet_3
-  - first:
-      213: 2717055547504637818
-    second: Earth_water overlay sheet_4
-  - first:
-      213: 5466169606356533628
-    second: Earth_water overlay sheet_5
-  - first:
-      213: 3346153313255905411
-    second: Earth_water overlay sheet_6
-  - first:
-      213: -404524241098400028
-    second: Earth_water overlay sheet_7
+      213: 3165528700479259255
+    second: Insolitum_extra foreground rock_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -67,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,89 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Earth_water overlay sheet_0
+      name: Insolitum_extra foreground rock_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 540
-        width: 320
-        height: 180
+        x: 254
+        y: 45
+        width: 8
+        height: 6
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 688b31d7966cec6f0800000000000000
-      internalID: -662373938804574074
+      spriteID: 6c6c1ec885859b950800000000000000
+      internalID: 6465295877411030726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Earth_water overlay sheet_1
+      name: Insolitum_extra foreground rock_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 360
-        width: 320
-        height: 180
+        x: 261
+        y: 44
+        width: 59
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 013e934d5580e5200800000000000000
-      internalID: 170583000612463376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Earth_water overlay sheet_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 180
-        width: 320
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3467188bb34670690800000000000000
-      internalID: -7636024435522046397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Earth_water overlay sheet_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 320
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b875557ae392abc80800000000000000
-      internalID: -8306281213659359349
+      spriteID: 772ce56d4973eeb20800000000000000
+      internalID: 3165528700479259255
       vertices: []
       indices: 
       edges: []
@@ -212,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f8ec306b77e0d2b4f9533a3e59eb54b7
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -220,14 +158,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":4.0},"gridSpriteSize":{"x":320.0,"y":180.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Earth_water overlay sheet_0: -662373938804574074
-      Earth_water overlay sheet_1: 170583000612463376
-      Earth_water overlay sheet_2: -7636024435522046397
-      Earth_water overlay sheet_3: -8306281213659359349
+      Insolitum_extra foreground rock_0: 6465295877411030726
+      Insolitum_extra foreground rock_1: 3165528700479259255
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
