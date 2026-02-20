@@ -35,6 +35,7 @@ namespace FishingGame.UI
             associatedUpgrade = upgrade;
             iconImage.sprite = upgrade.Sprite;
 
+            tooltipText.text = $"<size=15><b>{upgrade.Name}</b></size>\n<size=25>{upgrade.Description}</size>";
             priceText.text = upgrade.Price.ToString("F0");
 
             UpdateState();
@@ -62,12 +63,12 @@ namespace FishingGame.UI
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            throw new System.NotImplementedException();
+            tooltipObject.SetActive(true);
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            throw new System.NotImplementedException();
+            tooltipObject.SetActive(false);
         }
     }
 }
