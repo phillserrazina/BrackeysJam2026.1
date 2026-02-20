@@ -264,8 +264,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f95a4f03a565826478e4ca1f8a7ced98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.UI.UpgradeElementUI
-  iconImage: {fileID: 9153924440150065333}
   priceText: {fileID: 6905587801610048352}
+  iconImage: {fileID: 9153924440150065333}
+  fillImage: {fileID: 6920937131788643903}
   tooltipText: {fileID: 6806409815562180459}
   tooltipObject: {fileID: 7236640901296903619}
 --- !u!1 &2483386932317633065

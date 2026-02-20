@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-
+using System.Linq;
 using FishingGame.Data;
 
 namespace FishingGame.Gameplay.Systems
@@ -8,33 +8,37 @@ namespace FishingGame.Gameplay.Systems
     public class PlayerUpgradesHandler
     {
         // VARIABLES
-        private readonly List<UpgradeConfigSO> ownedUpgrades = new();
+        private readonly Dictionary<UpgradeConfigSO, int> upgradesDictionary = new();
     
         // METHODS
-        public void Add(UpgradeConfigSO upgrade)
+        public void Increment(UpgradeConfigSO upgrade)
         {
-            ownedUpgrades.Add(upgrade);
+            if (upgradesDictionary.ContainsKey(upgrade))
+            {
+                upgradesDictionary[upgrade]++;
+            }
+            else
+            {
+                upgradesDictionary.Add(upgrade, 1);
+            }
         }
 
-        public bool Has(UpgradeConfigSO upgrade)
-        {
-            return ownedUpgrades.Contains(upgrade);
-        }
+        public int GetUpgradeLevel(UpgradeConfigSO upgrade) => upgradesDictionary.ContainsKey(upgrade) ? upgradesDictionary[upgrade] : 0;
 
         public void Clear()
         {
-            ownedUpgrades.Clear();
+            upgradesDictionary.Clear();
         }
 
         public float GetModifiedValue(UpgradeTypes upgradeType, float value)
         {
             float finalValue = value;
 
-            foreach (var upgrade in ownedUpgrades)
+            foreach (var upgrade in upgradesDictionary.Keys.ToArray())
             {
                 if (upgrade.Type == upgradeType)
                 {
-                    finalValue += upgrade.ValuePerLevel;
+                    finalValue += upgrade.ValuePerLevel * upgradesDictionary[upgrade];
                 }
             }
 

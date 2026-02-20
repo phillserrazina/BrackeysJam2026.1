@@ -21,6 +21,7 @@ namespace FishingGame.Data
         public string Description;
         public UpgradeTypes Type;
         public float ValuePerLevel;
+        public int MaxLevel = 10;
 
         [Space(5)]
         public Sprite Sprite;

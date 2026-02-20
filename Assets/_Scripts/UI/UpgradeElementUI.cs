@@ -8,11 +8,12 @@ using FishingGame.Gameplay.Systems;
 
 namespace FishingGame.UI
 {
-    public class UpgradeElementUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class UpgradeElementUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
     {
         // VARIABLES
-        [SerializeField] private Image iconImage;
         [SerializeField] private TMP_Text priceText;
+        [SerializeField] private Image iconImage;
+        [SerializeField] private Image fillImage;
 
         [Header("Tooltip")]
         [SerializeField] private TMP_Text tooltipText;
@@ -21,6 +22,7 @@ namespace FishingGame.UI
         private PlayerWallet playerWallet;
         private PlayerUpgradesHandler playerUpgrades;
         private UpgradeConfigSO associatedUpgrade;
+
 
         // EXECUTION FUNCTIONS
         private void Awake()
@@ -36,24 +38,31 @@ namespace FishingGame.UI
             iconImage.sprite = upgrade.Sprite;
 
             tooltipText.text = $"<size=15><b>{upgrade.Name}</b></size>\n<size=25>{upgrade.Description}</size>";
-            priceText.text = upgrade.PricePerLevel.ToString("F0");
 
             UpdateState();
         }
 
         public void Buy()
         {
-            if (playerWallet.Get(CurrencyTypes.Gold) >= associatedUpgrade.PricePerLevel)
+            if (playerUpgrades.GetUpgradeLevel(associatedUpgrade) >= associatedUpgrade.MaxLevel)
             {
-                playerWallet.Spend(CurrencyTypes.Gold, associatedUpgrade.PricePerLevel);
-                playerUpgrades.Add(associatedUpgrade);
+                return;
+            }
+
+            float upgradePrice = GetUpgradePrice();
+
+            if (playerWallet.Get(CurrencyTypes.Gold) >= upgradePrice)
+            {
+                playerWallet.Spend(CurrencyTypes.Gold, upgradePrice);
+                playerUpgrades.Increment(associatedUpgrade);
                 UpdateState();
             }
         }
 
         public void UpdateState()
         {
-            
+            priceText.text = GetUpgradePrice().ToString("F0");
+            fillImage.fillAmount = (float)playerUpgrades.GetUpgradeLevel(associatedUpgrade) / (float)associatedUpgrade.MaxLevel;
         }
 
         public void OnPointerEnter(PointerEventData eventData)
@@ -61,9 +70,26 @@ namespace FishingGame.UI
             tooltipObject.SetActive(true);
         }
 
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            Buy();
+        }
+
         public void OnPointerExit(PointerEventData eventData)
         {
             tooltipObject.SetActive(false);
         }
+
+        private float GetUpgradePrice()
+        {
+            if (associatedUpgrade == null)
+            {
+                return 0f;
+            }
+
+            return associatedUpgrade.PricePerLevel * (playerUpgrades.GetUpgradeLevel(associatedUpgrade) + 1);
+        }
+
+        
     }
 }

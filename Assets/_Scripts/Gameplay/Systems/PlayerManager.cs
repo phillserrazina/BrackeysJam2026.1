@@ -30,7 +30,7 @@ namespace FishingGame.Gameplay.Systems
 
             foreach (var upgrade in debugUpgrades)
             {
-                Upgrades.Add(upgrade);
+                Upgrades.Increment(upgrade);
             }
         }
 
