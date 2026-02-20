@@ -17,17 +17,10 @@ MonoBehaviour:
   LuckModifier: 0
   Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   Fishes:
-  - {fileID: 11400000, guid: aff64b9b8f5004540ad1132a14ed3aef, type: 2}
-  - {fileID: 11400000, guid: 762669dbee96d9c42a7594c890de8a9d, type: 2}
-  - {fileID: 11400000, guid: 1c1cb4f9da5f47643b4fde10112fea2c, type: 2}
-  - {fileID: 11400000, guid: 892ca0aac68ef6640a39375a74095b90, type: 2}
-  - {fileID: 11400000, guid: 96a0f54bf9bddb4428e35f7b5a02a6a9, type: 2}
-  - {fileID: 11400000, guid: a848536cb6b656046987de77c30dfe27, type: 2}
-  - {fileID: 11400000, guid: 3d787042eff652440949eb71ff05a3bb, type: 2}
   - {fileID: 11400000, guid: 3a8b11fdc6bece048b5e4c076a375951, type: 2}
+  - {fileID: 11400000, guid: 1c1cb4f9da5f47643b4fde10112fea2c, type: 2}
   - {fileID: 11400000, guid: e63648daabe92c0498c5e3265c2479a7, type: 2}
-  - {fileID: 11400000, guid: c2708983912eeee438303ae96b36168c, type: 2}
-  - {fileID: 11400000, guid: f53f38545b4ceea448010f55996dcbd7, type: 2}
-  - {fileID: 11400000, guid: c341decb429701f45be02bb98d584dda, type: 2}
-  - {fileID: 11400000, guid: dd165f113cca0674aa5b9d2d9e1c1c58, type: 2}
+  - {fileID: 11400000, guid: 892ca0aac68ef6640a39375a74095b90, type: 2}
+  - {fileID: 11400000, guid: 762669dbee96d9c42a7594c890de8a9d, type: 2}
+  - {fileID: 11400000, guid: 0eb5307312949a349a9735038e215d76, type: 2}
   ObjectID: Planet_0

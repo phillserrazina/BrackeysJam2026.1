@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c8089ea974ea2840970e549300af06a, type: 3}
-  m_Name: 'Anchovy [Fish Config]'
+  m_Name: '4. Clown Fish [Fish Config]'
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.FishConfigSO
-  Name: Anchovy
+  Name: Clown Fish
   Description: It's an Anchovy!
-  Rarity: 0
-  Sprite: {fileID: -2756043731914790526, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
-  SellValue: 10
-  ObjectID: Fish_0_0
+  Rarity: 3
+  Sprite: {fileID: 5780711649772440475, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
+  SellValue: 12
+  ObjectID: Fish_0_3

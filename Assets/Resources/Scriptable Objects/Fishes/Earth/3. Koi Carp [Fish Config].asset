@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c8089ea974ea2840970e549300af06a, type: 3}
-  m_Name: 'Mackerel [Fish Config]'
+  m_Name: '3. Koi Carp [Fish Config]'
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.FishConfigSO
-  Name: Mackerel
+  Name: Koi Carp
   Description: It's an Anchovy!
-  Rarity: 0
-  Sprite: {fileID: -2756043731914790526, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
+  Rarity: 2
+  Sprite: {fileID: 4075091622926479770, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
   SellValue: 10
-  ObjectID: Fish_0_3
+  ObjectID: Fish_0_2
