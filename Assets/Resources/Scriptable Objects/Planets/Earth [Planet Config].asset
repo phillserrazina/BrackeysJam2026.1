@@ -14,7 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.PlanetConfigSO
   Name: Earth
   Description: Base Planet
+  LuckModifier: 0
   Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   Fishes:
-  - {fileID: 11400000, guid: aff64b9b8f5004540ad1132a14ed3aef, type: 2}
+  - {fileID: 11400000, guid: 3a8b11fdc6bece048b5e4c076a375951, type: 2}
+  - {fileID: 11400000, guid: 1c1cb4f9da5f47643b4fde10112fea2c, type: 2}
+  - {fileID: 11400000, guid: e63648daabe92c0498c5e3265c2479a7, type: 2}
+  - {fileID: 11400000, guid: 892ca0aac68ef6640a39375a74095b90, type: 2}
+  - {fileID: 11400000, guid: 762669dbee96d9c42a7594c890de8a9d, type: 2}
+  - {fileID: 11400000, guid: 0eb5307312949a349a9735038e215d76, type: 2}
   ObjectID: Planet_0

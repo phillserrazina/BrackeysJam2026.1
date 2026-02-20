@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40c2cbb2ff542c64d9dbf8e680c0496f, type: 3}
-  m_Name: 'Planet 2 [Planet Config]'
+  m_Name: 'Insolitum [Planet Config]'
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.PlanetConfigSO
-  Name: Planet 2
+  Name: Insolitum
   Description: The Planet after earth
+  LuckModifier: 30
   Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   Fishes:
   - {fileID: 11400000, guid: 247b409f96e9bee4783d6afe8024ac0d, type: 2}
-  ObjectID: Planet_1
+  ObjectID: Planet_3

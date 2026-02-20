@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public enum Rarities { Common, Uncommon, Rare, VeryRare, Legendary }
+public enum Rarities { Common, Uncommon, Rare, VeryRare, Legendary, Cosmic }
 
 namespace FishingGame.Data
 {

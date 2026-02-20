@@ -522,11 +522,6 @@ MonoBehaviour:
   m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!4 &557336170 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1752884385790151247, guid: 657f37d492518044890957373c58f747, type: 3}
-  m_PrefabInstance: {fileID: 9206442828167927733}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &646143700
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,6 +1631,7 @@ MonoBehaviour:
   fishingUI: {fileID: 748239997}
   castingFillImage: {fileID: 1141550792}
   castingFillSpeed: 1
+  baseLuckScore: 0
   waterRippleObject: {fileID: 1623631693}
   biteWarningObject: {fileID: 165274342}
   minFishingWaitTime: 2
@@ -1696,7 +1692,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1333010975}
-  - {fileID: 557336170}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1886777118
@@ -1822,7 +1817,7 @@ MonoBehaviour:
     SceneName: Earth
   - Planet: {fileID: 11400000, guid: 0b5a9c8c6ef7f6a4f81028c14028127e, type: 2}
     Fish: {fileID: 11400000, guid: 247b409f96e9bee4783d6afe8024ac0d, type: 2}
-    SceneName: Planet 2
+    SceneName: Laeto
 --- !u!1001 &5286417688072348272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1837,11 +1832,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7805572213870784010, guid: de1966134f07fb64c9a11210d684e723, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.29
+      value: -2.2
       objectReference: {fileID: 0}
     - target: {fileID: 7805572213870784010, guid: de1966134f07fb64c9a11210d684e723, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.612
+      value: -2.34
       objectReference: {fileID: 0}
     - target: {fileID: 7805572213870784010, guid: de1966134f07fb64c9a11210d684e723, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1937,63 +1932,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31a25e3fe2bab314791267423f065826, type: 3}
---- !u!1001 &9206442828167927733
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1718671891}
-    m_Modifications:
-    - target: {fileID: 1752884385790151247, guid: 657f37d492518044890957373c58f747, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1752884385790151247, guid: 657f37d492518044890957373c58f747, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1752884385790151247, guid: 657f37d492518044890957373c58f747, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1752884385790151247, guid: 657f37d492518044890957373c58f747, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9990483
-      objectReference: {fileID: 0}
-    - target: {fileID: 1752884385790151247, guid: 657f37d492518044890957373c58f747, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1752884385790151247, guid: 657f37d492518044890957373c58f747, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1752884385790151247, guid: 657f37d492518044890957373c58f747, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.043619405
-      objectReference: {fileID: 0}
-    - target: {fileID: 1752884385790151247, guid: 657f37d492518044890957373c58f747, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1752884385790151247, guid: 657f37d492518044890957373c58f747, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1752884385790151247, guid: 657f37d492518044890957373c58f747, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7298936732750608080, guid: 657f37d492518044890957373c58f747, type: 3}
-      propertyPath: m_Name
-      value: White Lady
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 657f37d492518044890957373c58f747, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

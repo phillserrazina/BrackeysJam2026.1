@@ -27,12 +27,32 @@ namespace FishingGame.Editor
             }
         }
 
-        [MenuItem("Scene/Open/Planet 2", priority = 102)]
-        static void OpenPlanet2()
+        [MenuItem("Scene/Open/Laeto", priority = 102)]
+        static void OpenLaeto()
         {
             if (EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
             {
-                EditorSceneManager.OpenScene("Assets/_Scenes/Planet 2.unity");
+                EditorSceneManager.OpenScene("Assets/_Scenes/Laeto.unity");
+                LoadLogicScenes();
+            }
+        }
+
+        [MenuItem("Scene/Open/Cirrus", priority = 103)]
+        static void OpenCirrus()
+        {
+            if (EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
+            {
+                EditorSceneManager.OpenScene("Assets/_Scenes/Cirrus.unity");
+                LoadLogicScenes();
+            }
+        }
+
+        [MenuItem("Scene/Open/Insolitum", priority = 103)]
+        static void OpenInsolitum()
+        {
+            if (EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
+            {
+                EditorSceneManager.OpenScene("Assets/_Scenes/Insolitum.unity");
                 LoadLogicScenes();
             }
         }

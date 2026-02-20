@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public enum UpgradeTypes { BetterFishOdds, IncreaseCatchBarSize, ReduceFishSpeed }
+public enum UpgradeTypes { LuckScore, IncreaseCatchBarSize, ReduceFishSpeed }
 
 namespace FishingGame.Data
 {

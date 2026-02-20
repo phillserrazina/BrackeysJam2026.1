@@ -9,6 +9,7 @@ namespace FishingGame.Data
         [Header("Settings")]
         public string Name;
         public string Description;
+        public float LuckModifier = 1f;
 
         [Space(5)]
         public Sprite Sprite;

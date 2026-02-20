@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-using FishingGame.Data;
 using DG.Tweening;
-using TMPro;
+
+using FishingGame.Data;
 
 namespace FishingGame.Gameplay.Systems
 {
@@ -23,6 +23,7 @@ namespace FishingGame.Gameplay.Systems
         [Header("Casting")]
         [SerializeField] private Image castingFillImage;
         [SerializeField] private float castingFillSpeed = 1f;
+        [SerializeField] private float baseLuckScore = 0f;
 
         [Header("Fishing")]
         [SerializeField] private GameObject waterRippleObject;
@@ -144,7 +145,8 @@ namespace FishingGame.Gameplay.Systems
                     currentCatchWindowTime = 0f;
 
                     PlanetConfigSO currentPlanet = LocationManager.Instance.CurrentLocation;
-                    FishConfigSO randomFish = DataManager.Instance.GetRandomFishData(currentPlanet);
+                    float playerLuck = PlayerManager.Instance.GetUpgradeModifiedValue(UpgradeTypes.LuckScore, baseLuckScore);
+                    FishConfigSO randomFish = DataManager.Instance.GetRandomFishData(currentPlanet, playerLuck);
 
                     BeginCatching(randomFish);
                     break;
