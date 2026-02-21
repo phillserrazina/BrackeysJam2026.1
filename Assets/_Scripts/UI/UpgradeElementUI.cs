@@ -71,10 +71,20 @@ namespace FishingGame.UI
 
         public void UpdateState()
         {
-            priceText.text = $"${GetUpgradePrice():F0}";
             int currentLevel = playerUpgrades.GetUpgradeLevel(associatedUpgrade);
 
-            for (int i = 0; i < currentLevel; i++) 
+            // If we've reached max level, display MAX instead of a price
+            if (associatedUpgrade != null && currentLevel >= associatedUpgrade.MaxLevel)
+            {
+                priceText.text = "MAX";
+            }
+            else
+            {
+                priceText.text = $"${GetUpgradePrice():F0}";
+            }
+
+            // Update fill objects for all slots to avoid stale active states
+            for (int i = 0; i < fillObjects.Length; i++)
             {
                 fillObjects[i].SetActive(i < currentLevel);
             }
