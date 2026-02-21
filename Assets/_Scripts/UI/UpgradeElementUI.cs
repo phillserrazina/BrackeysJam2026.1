@@ -39,6 +39,8 @@ namespace FishingGame.UI
         private void OnDisable()
         {
             iconImage.transform.localScale = originalIconScale;
+            if (tooltipObject != null)
+                tooltipObject.SetActive(false);
         }
 
         // METHODS
@@ -47,7 +49,7 @@ namespace FishingGame.UI
             associatedUpgrade = upgrade;
             iconImage.sprite = upgrade.Sprite;
 
-            tooltipText.text = $"<size=15><b>{upgrade.Name}</b></size>\n<size=25>{upgrade.Description}</size>";
+            tooltipText.text = $"<size=30><b>{upgrade.Name}</b></size>\n<size=25>{upgrade.Description}</size>";
 
             UpdateState();
         }
@@ -93,6 +95,11 @@ namespace FishingGame.UI
         public void OnPointerEnter(PointerEventData eventData)
         {
             iconImage.transform.DOScale(originalIconScale * 1.1f, 0.1f);
+            // Show tooltip when hovering
+            if (tooltipObject != null)
+            {
+                tooltipObject.SetActive(true);
+            }
         }
 
         public void OnPointerClick(PointerEventData eventData)
@@ -103,6 +110,8 @@ namespace FishingGame.UI
         public void OnPointerExit(PointerEventData eventData)
         {
             iconImage.transform.DOScale(originalIconScale, 0.1f);
+            if (tooltipObject != null)
+                tooltipObject.SetActive(false);
         }
 
         private float GetUpgradePrice()
