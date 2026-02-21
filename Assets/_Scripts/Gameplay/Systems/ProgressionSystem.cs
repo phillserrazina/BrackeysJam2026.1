@@ -1,9 +1,9 @@
 using System.Linq;
+using System.Collections.Generic;
 
 using UnityEngine;
 
 using FishingGame.Data;
-using System.Collections.Generic;
 
 namespace FishingGame.Gameplay.Systems
 {
@@ -30,13 +30,24 @@ namespace FishingGame.Gameplay.Systems
         private void CollectionManager_OnFishDiscovered(FishConfigSO discoveredFish)
         {
             ProgressionStep currentStep = steps.FirstOrDefault(step => step.Planet == LocationManager.Instance.CurrentLocation);
-            
-            if (discoveredFish == currentStep.Fish)
+
+            bool readyForNextLevel = true;
+
+            foreach (var fish in currentStep.Fish)
+            {
+                if (!CollectionManager.Instance.IsCollected(fish))
+                {
+                    readyForNextLevel = false;
+                }
+            }
+
+            if (readyForNextLevel)
             {
                 int nextIndex = steps.IndexOf(currentStep) + 1;
 
                 if (nextIndex >= steps.Count)
                 {
+                    Debug.Log("Game Won!!");
                     return;
                 }
 
@@ -49,7 +60,7 @@ namespace FishingGame.Gameplay.Systems
         public class ProgressionStep
         {
             public PlanetConfigSO Planet;
-            public FishConfigSO Fish;
+            public FishConfigSO[] Fish;
             public string SceneName;
         }
     }

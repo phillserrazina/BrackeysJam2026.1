@@ -15,7 +15,8 @@ MonoBehaviour:
   Name: Stamina
   Description: Increases how long you can reel a fish for
   Type: 0
-  ValuePerLevel: 0
-  Sprite: {fileID: -1522347162890631716, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
+  ValuePerLevel: 0.05
+  MaxLevel: 20
+  Sprite: {fileID: -1853091812240255975, guid: d9ca12f71950e9f45ab7b5a64893d713, type: 3}
   PricePerLevel: 5
   ObjectID: Upgrade_0
