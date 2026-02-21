@@ -16,7 +16,7 @@ MonoBehaviour:
   Description: Increases odds of rarer fish appearing
   Type: 3
   ValuePerLevel: 1
-  MaxLevel: 10
-  Sprite: {fileID: -1522347162890631716, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
+  MaxLevel: 20
+  Sprite: {fileID: -2889678041515858806, guid: d9ca12f71950e9f45ab7b5a64893d713, type: 3}
   PricePerLevel: 10
   ObjectID: Upgrade_2

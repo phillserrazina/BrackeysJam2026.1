@@ -16,7 +16,7 @@ MonoBehaviour:
   Description: Increase how quick fish appear
   Type: 6
   ValuePerLevel: -1
-  MaxLevel: 10
-  Sprite: {fileID: -1522347162890631716, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
+  MaxLevel: 20
+  Sprite: {fileID: -3756019059309665670, guid: d9ca12f71950e9f45ab7b5a64893d713, type: 3}
   PricePerLevel: 5
   ObjectID: Upgrade_1

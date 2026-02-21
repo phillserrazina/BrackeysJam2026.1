@@ -13,7 +13,7 @@ namespace FishingGame.UI
         // VARIABLES
         [SerializeField] private TMP_Text priceText;
         [SerializeField] private Image iconImage;
-        [SerializeField] private Image fillImage;
+        [SerializeField] private GameObject[] fillObjects;
 
         [Header("Tooltip")]
         [SerializeField] private TMP_Text tooltipText;
@@ -62,7 +62,12 @@ namespace FishingGame.UI
         public void UpdateState()
         {
             priceText.text = GetUpgradePrice().ToString("F0");
-            fillImage.fillAmount = (float)playerUpgrades.GetUpgradeLevel(associatedUpgrade) / (float)associatedUpgrade.MaxLevel;
+            int currentLevel = playerUpgrades.GetUpgradeLevel(associatedUpgrade);
+
+            for (int i = 0; i < currentLevel; i++) 
+            {
+                fillObjects[i].SetActive(i < currentLevel);
+            }
         }
 
         public void OnPointerEnter(PointerEventData eventData)
