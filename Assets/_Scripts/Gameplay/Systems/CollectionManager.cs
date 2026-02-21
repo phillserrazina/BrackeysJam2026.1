@@ -104,6 +104,25 @@ public class CollectionManager : MonoBehaviour
     {
         collectedFish = new();
         CollectionSaveSystem.Delete();
+        try
+        {
+            PlayerSaveSystem.Delete();
+
+            if (PlayerManager.Instance != null)
+            {
+                // Clear wallet (spend all gold to trigger wallet change event)
+                float currentGold = PlayerManager.Instance.Wallet.Get(CurrencyTypes.Gold);
+                if (currentGold > 0f)
+                    PlayerManager.Instance.Wallet.Spend(CurrencyTypes.Gold, currentGold);
+
+                // Clear upgrades (this will trigger OnUpgradesChanged)
+                PlayerManager.Instance.Upgrades.Clear();
+            }
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"CollectionManager::Delete() - Failed to delete player save: {e}");
+        }
 
         Debug.Log($"CollectionManager::Delete() --- Data deleted successfuly. Fish collected: {collectedFish.Count}");
     }

@@ -87,6 +87,7 @@ namespace FishingGame.Gameplay.Systems
         private float currentMaxStamina;
         private float currentStaminaDepleteRate;
         private float currentStaminaRestorationRate;
+        private float previousMaxStamina;
 
         private float castingTime = 0f;
         private float currentCastingFillSpeed = 0f;
@@ -109,6 +110,7 @@ namespace FishingGame.Gameplay.Systems
 
             currentMaxStamina = baseStamina;
             currentStamina = baseStamina;
+            previousMaxStamina = currentMaxStamina;
         }
 
         private void Update()
@@ -298,7 +300,26 @@ namespace FishingGame.Gameplay.Systems
         {
             currentMaxWaitTime = player.GetUpgradeModifiedValue(UpgradeTypes.FishAppearanceSpeed, maxFishingWaitTime);
 
-            currentMaxStamina = player.GetUpgradeModifiedValue(UpgradeTypes.Stamina, baseStamina);
+            float newMaxStamina = player.GetUpgradeModifiedValue(UpgradeTypes.Stamina, baseStamina);
+
+            // If max stamina changed, adjust current stamina to avoid visible refill animation at startup.
+            if (!Mathf.Approximately(newMaxStamina, currentMaxStamina))
+            {
+                // If player was at full stamina previously, give full new max immediately.
+                if (Mathf.Approximately(currentStamina, currentMaxStamina))
+                {
+                    currentStamina = newMaxStamina;
+                }
+                else if (currentMaxStamina > 0f)
+                {
+                    // Preserve proportional stamina when not full.
+                    currentStamina = (currentStamina / currentMaxStamina) * newMaxStamina;
+                }
+
+                previousMaxStamina = currentMaxStamina;
+                currentMaxStamina = newMaxStamina;
+            }
+
             currentStaminaDepleteRate = staminaDepleteRate;
             currentStaminaRestorationRate = player.GetUpgradeModifiedValue(UpgradeTypes.StaminaRecovery, staminaRestorationRate);
 
