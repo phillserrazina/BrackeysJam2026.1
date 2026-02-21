@@ -7,7 +7,8 @@ public enum UpgradeTypes
     IncreaseReelSpeed,
     LuckScore,
     IncreaseCatchBarSize,
-    StaminaRecovery
+    StaminaRecovery,
+    FishAppearanceSpeed
 }
 
 namespace FishingGame.Data
