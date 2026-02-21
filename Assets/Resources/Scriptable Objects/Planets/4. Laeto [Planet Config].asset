@@ -10,12 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40c2cbb2ff542c64d9dbf8e680c0496f, type: 3}
-  m_Name: 'Laeto [Planet Config]'
+  m_Name: '4. Laeto [Planet Config]'
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.PlanetConfigSO
   Name: Laeto
   Description: The Planet after earth
   LuckModifier: 30
   Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   Fishes:
-  - {fileID: 11400000, guid: 247b409f96e9bee4783d6afe8024ac0d, type: 2}
+  - {fileID: 11400000, guid: b04ff9b2a72b42746b3f58b4d5b919a4, type: 2}
+  - {fileID: 11400000, guid: 0e751dc1a20516843ad660b761e338f8, type: 2}
+  - {fileID: 11400000, guid: a5ce5c7fc8aa5044296754a41d965e61, type: 2}
+  - {fileID: 11400000, guid: 4da4fbec509d1f242b66784d9578bfe9, type: 2}
+  - {fileID: 11400000, guid: 2436374339095014a8dca4ff58e244b2, type: 2}
+  - {fileID: 11400000, guid: 5026d372861b5f64ba0a2c6495322f92, type: 2}
+  - {fileID: 11400000, guid: 837b979f56aea424da0655fdb6a4ca4e, type: 2}
   ObjectID: Planet_3

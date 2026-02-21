@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40c2cbb2ff542c64d9dbf8e680c0496f, type: 3}
-  m_Name: 'Earth [Planet Config]'
+  m_Name: '1. Earth [Planet Config]'
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.PlanetConfigSO
   Name: Earth
   Description: Base Planet

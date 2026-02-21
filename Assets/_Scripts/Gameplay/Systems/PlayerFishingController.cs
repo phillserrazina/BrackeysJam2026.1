@@ -61,6 +61,12 @@ namespace FishingGame.Gameplay.Systems
         [SerializeField] private float progressFillRate = 0.5f;
         [SerializeField] private float progressDepleteRate = 0.3f;
 
+        [Header("Post Catch")]
+        [SerializeField] private GameObject caughtFishPrefab;
+        [SerializeField] private Transform catchPoint;
+        [SerializeField] private float jumpPower = 1.5f;
+        [SerializeField] private float jumpDuration = 2f;
+
         private float currentCatchBarSize;
         private float currentCatchBarSpeed;
         private float currentFishSpeed;
@@ -90,6 +96,8 @@ namespace FishingGame.Gameplay.Systems
         private float currentFishingWaitTime = 0f;
 
         private float currentCatchWindowTime = 0f;
+
+        private float currentMaxWaitTime = 0f;
 
         private FishingStates currentState = FishingStates.Idle;
 
@@ -201,7 +209,7 @@ namespace FishingGame.Gameplay.Systems
             fishingUI.SetActive(false);
             castingUI.SetActive(true);
 
-            targetFishingWaitTime = Random.Range(minFishingWaitTime, maxFishingWaitTime);
+            targetFishingWaitTime = Random.Range(minFishingWaitTime, currentMaxWaitTime);
 
             ChangeToState(FishingStates.Casting);
         }
@@ -247,7 +255,7 @@ namespace FishingGame.Gameplay.Systems
             {
                 currentFishingWaitTime = 0f;
                 currentCatchWindowTime = 0f;
-                targetFishingWaitTime = Random.Range(minFishingWaitTime, maxFishingWaitTime);
+                targetFishingWaitTime = Random.Range(minFishingWaitTime, currentMaxWaitTime);
 
                 ChangeToState(FishingStates.Fishing);
                 biteWarningObject.SetActive(false);
@@ -288,6 +296,8 @@ namespace FishingGame.Gameplay.Systems
 
         private void UpdateFishingSettings()
         {
+            currentMaxWaitTime = player.GetUpgradeModifiedValue(UpgradeTypes.FishAppearanceSpeed, maxFishingWaitTime);
+
             currentMaxStamina = player.GetUpgradeModifiedValue(UpgradeTypes.Stamina, baseStamina);
             currentStaminaDepleteRate = staminaDepleteRate;
             currentStaminaRestorationRate = player.GetUpgradeModifiedValue(UpgradeTypes.StaminaRecovery, staminaRestorationRate);
@@ -381,12 +391,19 @@ namespace FishingGame.Gameplay.Systems
             }
         }
 
+
+        private GameObject currentSpawnedFishObject;
         private void OnCatchEnd(bool success)
         {
             if (success)
             {
                 player.Wallet.Add(CurrencyTypes.Gold, currentFish.SellValue);
                 CollectionManager.Instance.RegisterCatch(currentFish);
+
+                currentSpawnedFishObject = Instantiate(caughtFishPrefab, waterRippleObject.transform.position, Quaternion.identity);
+                currentSpawnedFishObject.GetComponentInChildren<SpriteRenderer>().sprite = currentFish.Sprite;
+
+                currentSpawnedFishObject.transform.DOJump(catchPoint.transform.position, jumpPower, 1, jumpDuration);
             }
 
             castingUI.SetActive(false);
@@ -406,6 +423,9 @@ namespace FishingGame.Gameplay.Systems
         {
             yield return new WaitForSeconds(0.2f);
             yield return new WaitUntil(() => playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle"));
+
+            Destroy(currentSpawnedFishObject);
+            currentSpawnedFishObject = null;
 
             EndFishing();
         }

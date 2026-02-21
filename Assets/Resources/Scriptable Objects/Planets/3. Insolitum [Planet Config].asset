@@ -10,12 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40c2cbb2ff542c64d9dbf8e680c0496f, type: 3}
-  m_Name: 'Insolitum [Planet Config]'
+  m_Name: '3. Insolitum [Planet Config]'
   m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Data.PlanetConfigSO
   Name: Insolitum
   Description: The Planet after earth
   LuckModifier: 20
   Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   Fishes:
-  - {fileID: 11400000, guid: 247b409f96e9bee4783d6afe8024ac0d, type: 2}
+  - {fileID: 11400000, guid: 2847dd7a0cd2e234cb84d299b7f4cb55, type: 2}
+  - {fileID: 11400000, guid: c14df2247bb82d248baf4e1e67ce01ae, type: 2}
+  - {fileID: 11400000, guid: 752171f70693c624b9742d6af91db0a3, type: 2}
+  - {fileID: 11400000, guid: 6165e5414ef80314198f10effcf1a0e7, type: 2}
+  - {fileID: 11400000, guid: 40d89188f8b1f7347b3333db86ceb33f, type: 2}
+  - {fileID: 11400000, guid: 05107d6c47accdf4c9bac0e588d48786, type: 2}
+  - {fileID: 11400000, guid: adacaa28414ca9240867a6099f34f1bb, type: 2}
   ObjectID: Planet_2

@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Hook
   Description: Increase how quick fish appear
   Type: 6
-  ValuePerLevel: -1
+  ValuePerLevel: -0.3
   MaxLevel: 20
   Sprite: {fileID: -3756019059309665670, guid: d9ca12f71950e9f45ab7b5a64893d713, type: 3}
   PricePerLevel: 5
