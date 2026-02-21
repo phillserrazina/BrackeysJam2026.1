@@ -18,6 +18,7 @@ namespace FishingGame.Gameplay.Systems
         public PlayerUpgradesHandler Upgrades { get; private set; }
         private CollectionMenuUI collectionMenu;
         private UpgradesMenuUI upgradesMenu;
+        private System.Collections.Generic.List<UpgradeSaveEntry> pendingUpgrades = new();
 
         public static PlayerManager Instance { get; private set; }
 
@@ -25,19 +26,87 @@ namespace FishingGame.Gameplay.Systems
         private void Awake()
         {
             Instance = this;
+
+            // Initialize systems
             Wallet = new();
             Upgrades = new();
 
+            // Load saved player data (gold + upgrades)
+            var saved = PlayerSaveSystem.Load();
+
+            if (saved != null)
+            {
+                if (saved.gold > 0f)
+                    Wallet.Add(CurrencyTypes.Gold, saved.gold);
+
+                // Store upgrade entries and apply when DataManager is available
+                if (saved.upgrades != null)
+                    pendingUpgrades = new System.Collections.Generic.List<UpgradeSaveEntry>(saved.upgrades);
+            }
+
+            // Apply debug upgrades (if any)
             foreach (var upgrade in debugUpgrades)
             {
                 Upgrades.Increment(upgrade);
             }
+
+            // Subscribe to changes so we save progress
+            Wallet.OnWalletChanged += _ => SavePlayer();
+            Upgrades.OnUpgradesChanged += SavePlayer;
         }
 
         private void Start()
         {
             Application.targetFrameRate = 60;
+
+            // Attempt to apply pending upgrades now that other Awakes have run
+            ApplyPendingUpgrades();
         }
+
+        private void OnApplicationQuit()
+        {
+            SavePlayer();
+        }
+
+        private void ApplyPendingUpgrades()
+        {
+            if (pendingUpgrades == null || pendingUpgrades.Count == 0)
+                return;
+
+            if (DataManager.Instance == null)
+            {
+                // Give up if DataManager still not present
+                Debug.LogWarning("PlayerManager::ApplyPendingUpgrades() - DataManager not found, skipping applying saved upgrades.");
+                return;
+            }
+
+            foreach (var entry in pendingUpgrades)
+            {
+                var cfg = DataManager.Instance.GetUpgradeByID(entry.id);
+                if (cfg == null) continue;
+
+                for (int i = 0; i < entry.level; i++)
+                    Upgrades.Increment(cfg);
+            }
+
+            pendingUpgrades.Clear();
+        }
+
+        private void SavePlayer()
+        {
+            var data = new PlayerSaveData();
+            data.gold = Wallet.Get(CurrencyTypes.Gold);
+
+            var upgradesDict = Upgrades.GetAllUpgradeLevelsById();
+            foreach (var kvp in upgradesDict)
+            {
+                data.upgrades.Add(new UpgradeSaveEntry { id = kvp.Key, level = kvp.Value });
+            }
+
+            PlayerSaveSystem.Save(data);
+        }
+
+        
 
         // INPUT
         private void OnCast(InputValue input)

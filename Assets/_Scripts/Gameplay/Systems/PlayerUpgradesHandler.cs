@@ -9,6 +9,7 @@ namespace FishingGame.Gameplay.Systems
     {
         // VARIABLES
         private readonly Dictionary<UpgradeConfigSO, int> upgradesDictionary = new();
+        public event Action OnUpgradesChanged;
     
         // METHODS
         public void Increment(UpgradeConfigSO upgrade)
@@ -21,6 +22,8 @@ namespace FishingGame.Gameplay.Systems
             {
                 upgradesDictionary.Add(upgrade, 1);
             }
+
+            OnUpgradesChanged?.Invoke();
         }
 
         public int GetUpgradeLevel(UpgradeConfigSO upgrade) => upgradesDictionary.ContainsKey(upgrade) ? upgradesDictionary[upgrade] : 0;
@@ -28,6 +31,8 @@ namespace FishingGame.Gameplay.Systems
         public void Clear()
         {
             upgradesDictionary.Clear();
+
+            OnUpgradesChanged?.Invoke();
         }
 
         public float GetModifiedValue(UpgradeTypes upgradeType, float value)
@@ -43,6 +48,19 @@ namespace FishingGame.Gameplay.Systems
             }
 
             return finalValue;
+        }
+
+        public Dictionary<string, int> GetAllUpgradeLevelsById()
+        {
+            var dict = new Dictionary<string, int>();
+
+            foreach (var kvp in upgradesDictionary)
+            {
+                if (kvp.Key != null && !string.IsNullOrEmpty(kvp.Key.ObjectID))
+                    dict[kvp.Key.ObjectID] = kvp.Value;
+            }
+
+            return dict;
         }
     }
 }
