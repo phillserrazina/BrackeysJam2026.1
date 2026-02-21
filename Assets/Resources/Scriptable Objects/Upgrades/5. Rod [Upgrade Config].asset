@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Rod
   Description: Increases how quickly stamina recovers
   Type: 5
-  ValuePerLevel: 0.2
+  ValuePerLevel: 0.02
   MaxLevel: 20
   Sprite: {fileID: 7362465455875783212, guid: d9ca12f71950e9f45ab7b5a64893d713, type: 3}
   PricePerLevel: 15

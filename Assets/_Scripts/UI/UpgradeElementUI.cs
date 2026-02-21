@@ -5,6 +5,7 @@ using TMPro;
 
 using FishingGame.Data;
 using FishingGame.Gameplay.Systems;
+using DG.Tweening;
 
 namespace FishingGame.UI
 {
@@ -23,12 +24,21 @@ namespace FishingGame.UI
         private PlayerUpgradesHandler playerUpgrades;
         private UpgradeConfigSO associatedUpgrade;
 
+        private Vector3 originalIconScale;
+
 
         // EXECUTION FUNCTIONS
         private void Awake()
         {
             playerWallet = PlayerManager.Instance.Wallet;
             playerUpgrades = PlayerManager.Instance.Upgrades;
+
+            originalIconScale = iconImage.transform.localScale;
+        }
+
+        private void OnDisable()
+        {
+            iconImage.transform.localScale = originalIconScale;
         }
 
         // METHODS
@@ -61,7 +71,7 @@ namespace FishingGame.UI
 
         public void UpdateState()
         {
-            priceText.text = GetUpgradePrice().ToString("F0");
+            priceText.text = $"${GetUpgradePrice():F0}";
             int currentLevel = playerUpgrades.GetUpgradeLevel(associatedUpgrade);
 
             for (int i = 0; i < currentLevel; i++) 
@@ -72,7 +82,7 @@ namespace FishingGame.UI
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            tooltipObject.SetActive(true);
+            iconImage.transform.DOScale(originalIconScale * 1.1f, 0.1f);
         }
 
         public void OnPointerClick(PointerEventData eventData)
@@ -82,7 +92,7 @@ namespace FishingGame.UI
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            tooltipObject.SetActive(false);
+            iconImage.transform.DOScale(originalIconScale, 0.1f);
         }
 
         private float GetUpgradePrice()
