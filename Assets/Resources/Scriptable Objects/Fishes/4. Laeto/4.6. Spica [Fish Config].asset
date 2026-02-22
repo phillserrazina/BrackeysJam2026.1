@@ -16,5 +16,5 @@ MonoBehaviour:
   Description: Child of the White Lady
   Rarity: 5
   Sprite: {fileID: -2749634554799181128, guid: 00c8292f4b2d82a4ca85602418d8b662, type: 3}
-  SellValue: 25
+  SellValue: 300
   ObjectID: Fish_3_5
