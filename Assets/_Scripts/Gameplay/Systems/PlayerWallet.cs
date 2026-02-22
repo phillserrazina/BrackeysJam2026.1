@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 
 using UnityEngine;
+using FishingGame.Audio;
 
 public enum CurrencyTypes { Gold }
 
@@ -27,6 +28,8 @@ namespace FishingGame.Gameplay.Systems
             }
 
             OnWalletChanged?.Invoke(new(currencyType, amount));
+            // Play money gain SFX if available
+            AudioManager.Instance?.PlayMoneyGain();
         }
 
         public float Get(CurrencyTypes currencyType)

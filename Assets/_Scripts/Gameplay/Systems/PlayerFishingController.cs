@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 
 using FishingGame.Data;
+using FishingGame.Audio;
 
 namespace FishingGame.Gameplay.Systems
 {
@@ -204,6 +205,7 @@ namespace FishingGame.Gameplay.Systems
         {
             currentCastingFillSpeed = castingFillSpeed;
             playerAnimator.Play("Cast Start");
+            AudioManager.Instance?.Play("cast_start");
 
             castingTime = 0f;
             currentCastingValue = 0f;
@@ -219,6 +221,8 @@ namespace FishingGame.Gameplay.Systems
         public void ReleaseCastHold()
         {
             playerAnimator.Play("Cast End");
+
+            AudioManager.Instance?.Play("cast_end");
 
             currentCastingFillSpeed = 0f;
 
@@ -244,6 +248,7 @@ namespace FishingGame.Gameplay.Systems
             if (currentFishingWaitTime >= targetFishingWaitTime)
             {
                 biteWarningObject.SetActive(true);
+                AudioManager.Instance?.Play("bite");
                 currentCatchWindowTime = catchWindowTime;
                 ChangeToState(FishingStates.CatchInputWindow);
             }
@@ -418,6 +423,7 @@ namespace FishingGame.Gameplay.Systems
         {
             if (success)
             {
+                AudioManager.Instance?.Play("catch_success");
                 player.Wallet.Add(CurrencyTypes.Gold, currentFish.SellValue);
                 CollectionManager.Instance.RegisterCatch(currentFish);
 
@@ -433,6 +439,7 @@ namespace FishingGame.Gameplay.Systems
             currentFish = null;
             waterRippleObject.SetActive(false);
 
+            AudioManager.Instance?.Play(success ? "victory" : "catch_fail");
             playerAnimator.SetBool("Success", success);
             playerAnimator.Play("Struggling End");
 
