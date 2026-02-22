@@ -3379,7 +3379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1249236349
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3677,7 +3677,7 @@ GameObject:
   - component: {fileID: 1372832213}
   - component: {fileID: 1372832212}
   m_Layer: 0
-  m_Name: Quit to Desktop Button
+  m_Name: Quit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3748,7 +3748,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1220715211}
         m_TargetAssemblyTypeName: FishingGame.UI.PauseMenuUI, Assembly-CSharp
-        m_MethodName: QuitToDesktopButton
+        m_MethodName: QuitToMenuButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
