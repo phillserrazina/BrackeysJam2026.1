@@ -701,6 +701,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1270067310}
   - {fileID: 665617621}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -749,7 +750,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 3d61e9f86e7f1ee47a8b97e046455aa4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1699,6 +1700,62 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1270067309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270067310}
+  - component: {fileID: 1270067311}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1270067310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270067309}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 646143701}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1270067311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270067309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876533cf7933ffd43ae741ccf651294f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishingGame.Audio.AudioManager
+  moneyGain: {fileID: 0}
+  menuOpen: {fileID: 8300000, guid: 9232d0e04a8f45b44a78b77d8eef4a0f, type: 3}
+  menuClose: {fileID: 8300000, guid: 9232d0e04a8f45b44a78b77d8eef4a0f, type: 3}
+  castStart: {fileID: 8300000, guid: a361d1077d8a2b542b209ccc128bb06b, type: 3}
+  castEnd: {fileID: 8300000, guid: 0f340120834048d49a806a219cea93b3, type: 3}
+  bite: {fileID: 0}
+  catchSuccess: {fileID: 8300000, guid: e85675585a1087447826a44e87259d95, type: 3}
+  catchFail: {fileID: 8300000, guid: 3f52ed10ba02f1b4e872104ef553b933, type: 3}
+  victory: {fileID: 8300000, guid: 1a1b6abd06cc2284dad4fbc9ab713d63, type: 3}
+  upgradeBuy: {fileID: 8300000, guid: fe7256af6f0ccb7499fd2fd53404f39c, type: 3}
+  collectFish: {fileID: 8300000, guid: e85675585a1087447826a44e87259d95, type: 3}
+  reelLoop: {fileID: 8300000, guid: a6c9f92f9f0772b469c727e9df998b66, type: 3}
 --- !u!1 &1332730981
 GameObject:
   m_ObjectHideFlags: 0

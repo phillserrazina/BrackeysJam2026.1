@@ -67,6 +67,8 @@ namespace FishingGame.UI
             {
                 playerWallet.Spend(CurrencyTypes.Gold, upgradePrice);
                 playerUpgrades.Increment(associatedUpgrade);
+                // play purchase sfx
+                FishingGame.Audio.AudioManager.Instance?.PlayUpgradeBuy();
                 UpdateState();
             }
         }

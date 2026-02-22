@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using FishingGame.Gameplay.Systems;
+using FishingGame.Audio;
 
 namespace FishingGame.UI
 {
@@ -45,11 +46,13 @@ namespace FishingGame.UI
                 element.UpdateState();
             }
 
+            AudioManager.Instance?.PlayMenuOpen();
             gameObject.SetActive(true);
         }
 
         public void Hide()
         {
+            AudioManager.Instance?.PlayMenuClose();
             gameObject.SetActive(false);
         }
 
