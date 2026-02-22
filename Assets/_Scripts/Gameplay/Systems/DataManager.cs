@@ -53,7 +53,7 @@ namespace FishingGame.Gameplay.Systems
                 new RarityConfig { Rarity = Rarities.Rare,      BaseWeight = 1,    ScalingFactor = 5  },
                 new RarityConfig { Rarity = Rarities.VeryRare,  BaseWeight = 0.5f,    ScalingFactor = 7  },
                 new RarityConfig { Rarity = Rarities.Legendary, BaseWeight = 0.1f,    ScalingFactor = 9  },
-                new RarityConfig { Rarity = Rarities.Cosmic,    BaseWeight = 0.001f,    ScalingFactor = 10  }
+                new RarityConfig { Rarity = Rarities.Cosmic,    BaseWeight = 0.001f,    ScalingFactor = 20  }
             });
 
             var matchingRarityFishes = location.Fishes.Where(fish => fish.Rarity == randomRarity).ToArray();
