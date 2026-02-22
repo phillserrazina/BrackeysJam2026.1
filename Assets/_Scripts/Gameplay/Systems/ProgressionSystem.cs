@@ -51,6 +51,7 @@ namespace FishingGame.Gameplay.Systems
 
             if (readyForNextLevel)
             {
+                PlayerManager.Instance.Freeze();
                 int nextIndex = steps.IndexOf(currentStep) + 1;
 
                 if (nextIndex >= steps.Count)

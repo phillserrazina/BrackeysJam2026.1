@@ -23,6 +23,8 @@ namespace FishingGame.Gameplay.Systems
 
         public static PlayerManager Instance { get; private set; }
 
+        public bool IsFrozen { get; private set; } = false;
+
         // EXECUTION FUNCTIONS
         private void Awake()
         {
@@ -107,26 +109,44 @@ namespace FishingGame.Gameplay.Systems
             PlayerSaveSystem.Save(data);
         }
 
-        
-
         // INPUT
         private void OnCast(InputValue input)
         {
+            if (IsFrozen)
+            {
+                return;
+            }
+
             fishingController.OnFishingInput(input.isPressed);
         }
 
         private void OnFish(InputValue input)
         {
+            if (IsFrozen)
+            {
+                return;
+            }
+
             fishingController.OnFishingInput(input.isPressed);
         }
 
         private void OnPause(InputValue input)
         {
+            if (IsFrozen)
+            {
+                return;
+            }
+
             GameManager.Instance.TriggerPause();
         }
 
         private void OnCollection(InputValue input)
         {
+            if (IsFrozen)
+            {
+                return;
+            }
+
             if (collectionMenu == null)
             {
                 collectionMenu = FindFirstObjectByType<CollectionMenuUI>(FindObjectsInactive.Include);
@@ -137,6 +157,11 @@ namespace FishingGame.Gameplay.Systems
 
         private void OnUpgrades(InputValue input)
         {
+            if (IsFrozen)
+            {
+                return;
+            }
+
             if (upgradesMenu == null)
             {
                 upgradesMenu = FindFirstObjectByType<UpgradesMenuUI>(FindObjectsInactive.Include);
@@ -154,12 +179,19 @@ namespace FishingGame.Gameplay.Systems
                 {
                     button.enabled = true;
                 }
+
+                IsFrozen = false;
             });
         }
 
         public float GetUpgradeModifiedValue(UpgradeTypes upgradeType, float value)
         {
             return Upgrades.GetModifiedValue(upgradeType, value);
+        }
+
+        public void Freeze()
+        {
+            IsFrozen = true;
         }
     }
 }
