@@ -16,5 +16,5 @@ MonoBehaviour:
   Description: It's an Anchovy!
   Rarity: 2
   Sprite: {fileID: 4075091622926479770, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
-  SellValue: 10
+  SellValue: 8
   ObjectID: Fish_0_2

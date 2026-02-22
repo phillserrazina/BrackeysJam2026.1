@@ -1,0 +1,743 @@
+fileFormatVersion: 2
+guid: 948627fa6f49b21438095f71e266d23b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 67936339711831652
+    second: Rod_updated4_0
+  - first:
+      213: -3693593817437435183
+    second: Rod_updated4_1
+  - first:
+      213: -4120485882473573935
+    second: Rod_updated4_2
+  - first:
+      213: 5529813449462960742
+    second: Rod_updated4_3
+  - first:
+      213: -6859499839280366210
+    second: Rod_updated4_4
+  - first:
+      213: 252140405228973986
+    second: Rod_updated4_5
+  - first:
+      213: 509521485683901542
+    second: Rod_updated4_6
+  - first:
+      213: 8591223617329144552
+    second: Rod_updated4_7
+  - first:
+      213: 394227788562729542
+    second: Rod_updated4_8
+  - first:
+      213: 3762784236278496198
+    second: Rod_updated4_9
+  - first:
+      213: 3706223719011805624
+    second: Rod_updated4_10
+  - first:
+      213: 8113748661743322844
+    second: Rod_updated4_11
+  - first:
+      213: -551704678682802346
+    second: Rod_updated4_12
+  - first:
+      213: 521415507240741775
+    second: Rod_updated4_13
+  - first:
+      213: 4090555255788321377
+    second: Rod_updated4_14
+  - first:
+      213: -332492220543977320
+    second: Rod_updated4_15
+  - first:
+      213: 4638637002407380291
+    second: Rod_updated4_16
+  - first:
+      213: 9196841084313847724
+    second: Rod_updated4_17
+  - first:
+      213: -2962270123312247705
+    second: Rod_updated4_18
+  - first:
+      213: -3843097773308431588
+    second: Rod_updated4_19
+  - first:
+      213: -900794832873166794
+    second: Rod_updated4_20
+  - first:
+      213: 5299843822995832144
+    second: Rod_updated4_21
+  - first:
+      213: 4598745400626148563
+    second: Rod_updated4_22
+  - first:
+      213: 458163429864403129
+    second: Rod_updated4_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rod_updated4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 194
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e2dd3bdbb51f000800000000000000
+      internalID: 67936339711831652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 194
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da00171ef7bdbcc0800000000000000
+      internalID: -3693593817437435183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 194
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d19621dbe711d6c0800000000000000
+      internalID: -4120485882473573935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_3
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 194
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662da69b808ddbc40800000000000000
+      internalID: 5529813449462960742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_4
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 194
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d38d64d392ec0a0800000000000000
+      internalID: -6859499839280366210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_5
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 194
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af2237dc58cf7300800000000000000
+      internalID: 252140405228973986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_6
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 194
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6644e97771f221700800000000000000
+      internalID: 509521485683901542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2a9d89c582a3770800000000000000
+      internalID: 8591223617329144552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_8
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 97
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a8ed1c514987500800000000000000
+      internalID: 394227788562729542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_9
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 97
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbb1d9a358183430800000000000000
+      internalID: 3762784236278496198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_10
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 97
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b963d506d62f6330800000000000000
+      internalID: 3706223719011805624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_11
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 97
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6030c5b63d99070800000000000000
+      internalID: 8113748661743322844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_12
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 97
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657c03e8483f758f0800000000000000
+      internalID: -551704678682802346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8be67924a07c3700800000000000000
+      internalID: 521415507240741775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_14
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16abe5b155294c830800000000000000
+      internalID: 4090555255788321377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_15
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89835e74610c26bf0800000000000000
+      internalID: -332492220543977320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_16
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3458972f6cfbf5040800000000000000
+      internalID: 4638637002407380291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_17
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca7ce3e3d3eb1af70800000000000000
+      internalID: 9196841084313847724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_18
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 0
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c88338407e3e6d0800000000000000
+      internalID: -2962270123312247705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_19
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 0
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c133bd0dfe29aaac0800000000000000
+      internalID: -3843097773308431588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_20
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 0
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63866134fdbbf73f0800000000000000
+      internalID: -900794832873166794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_21
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 0
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05df6b290e3dc8940800000000000000
+      internalID: 5299843822995832144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_22
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 0
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d478c0a39602df30800000000000000
+      internalID: 4598745400626148563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rod_updated4_23
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 0
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b074264639bb5600800000000000000
+      internalID: 458163429864403129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0fa989ee82ff79a4fa96a9ae31142e58
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":82.0,"y":97.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Rod_updated4_0: 67936339711831652
+      Rod_updated4_1: -3693593817437435183
+      Rod_updated4_10: 3706223719011805624
+      Rod_updated4_11: 8113748661743322844
+      Rod_updated4_12: -551704678682802346
+      Rod_updated4_13: 521415507240741775
+      Rod_updated4_14: 4090555255788321377
+      Rod_updated4_15: -332492220543977320
+      Rod_updated4_16: 4638637002407380291
+      Rod_updated4_17: 9196841084313847724
+      Rod_updated4_18: -2962270123312247705
+      Rod_updated4_19: -3843097773308431588
+      Rod_updated4_2: -4120485882473573935
+      Rod_updated4_20: -900794832873166794
+      Rod_updated4_21: 5299843822995832144
+      Rod_updated4_22: 4598745400626148563
+      Rod_updated4_23: 458163429864403129
+      Rod_updated4_3: 5529813449462960742
+      Rod_updated4_4: -6859499839280366210
+      Rod_updated4_5: 252140405228973986
+      Rod_updated4_6: 509521485683901542
+      Rod_updated4_7: 8591223617329144552
+      Rod_updated4_8: 394227788562729542
+      Rod_updated4_9: 3762784236278496198
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
