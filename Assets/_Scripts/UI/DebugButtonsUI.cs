@@ -31,6 +31,7 @@ namespace FishingGame.UI
 
         public void DeleteData()
         {
+            PlayerSaveSystem.Delete();
             CollectionManager.Instance.Delete();
         }
 

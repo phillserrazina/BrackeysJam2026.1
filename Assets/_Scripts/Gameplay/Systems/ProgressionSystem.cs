@@ -61,6 +61,8 @@ namespace FishingGame.Gameplay.Systems
 
                     DOVirtual.DelayedCall(5f, () =>
                     {
+                        PlayerSaveSystem.Delete();
+
                         if (SceneLoader.Instance == null)
                         {
                             SceneManager.LoadScene("Win Menu");
