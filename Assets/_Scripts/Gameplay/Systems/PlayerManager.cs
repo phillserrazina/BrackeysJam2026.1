@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
 using FishingGame.UI;
@@ -149,7 +150,10 @@ namespace FishingGame.Gameplay.Systems
         {
             SceneLoader.Instance.LoadEnvironment(levelName, () =>
             {
-                
+                foreach (var button in FindObjectsByType<Button>(FindObjectsSortMode.None))
+                {
+                    button.enabled = true;
+                }
             });
         }
 

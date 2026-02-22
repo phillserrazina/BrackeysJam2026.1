@@ -2,8 +2,13 @@ using System.Linq;
 using System.Collections.Generic;
 
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
+using DG.Tweening;
 
 using FishingGame.Data;
+using UnityEngine.SceneManagement;
 
 namespace FishingGame.Gameplay.Systems
 {
@@ -11,6 +16,9 @@ namespace FishingGame.Gameplay.Systems
     {
         // VARIABLES
         [SerializeField] private List<ProgressionStep> steps = new();
+
+        [Header("UI")]
+        [SerializeField] private TMP_Text progressionText;
 
         private CollectionManager collectionManager;
 
@@ -47,11 +55,36 @@ namespace FishingGame.Gameplay.Systems
 
                 if (nextIndex >= steps.Count)
                 {
-                    Debug.Log("Game Won!!");
+                    progressionText.text = "My Children... they have all been found...\nthank you... Fisherman...";
+                    progressionText.gameObject.SetActive(true);
+
+                    DOVirtual.DelayedCall(5f, () =>
+                    {
+                        if (SceneLoader.Instance == null)
+                        {
+                            SceneManager.LoadScene("Main Menu");
+                            return;
+                        }
+
+                        SceneLoader.Instance.LoadScene("Main Menu");
+                    });
+
                     return;
                 }
 
-                PlayerManager.Instance.ChangeEnvironment(steps[nextIndex].SceneName);
+                foreach (var button in FindObjectsByType<Button>(FindObjectsSortMode.None))
+                {
+                    button.enabled = false;
+                }
+
+                progressionText.text = $"My Children in {currentStep.Planet.Name} have been found... \r\nthank you... {steps[nextIndex].Planet.Name} awaits us...";
+                progressionText.gameObject.SetActive(true);
+
+                DOVirtual.DelayedCall(5f, () =>
+                {
+                    progressionText.gameObject.SetActive(false);
+                    PlayerManager.Instance.ChangeEnvironment(steps[nextIndex].SceneName);
+                });
             }
         }
 
