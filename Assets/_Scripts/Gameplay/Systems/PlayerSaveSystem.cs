@@ -17,6 +17,7 @@ namespace FishingGame.Gameplay.Systems
     {
         public float gold = 0f;
         public List<UpgradeSaveEntry> upgrades = new();
+        public string Planet;
     }
 
     public static class PlayerSaveSystem
@@ -66,6 +67,11 @@ namespace FishingGame.Gameplay.Systems
             {
                 Debug.LogError($"PlayerSaveSystem::Delete() failed: {e}");
             }
+        }
+
+        public static bool Exists()
+        {
+            return File.Exists(SavePath);
         }
     }
 }

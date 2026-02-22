@@ -106,6 +106,8 @@ namespace FishingGame.Gameplay.Systems
                 data.upgrades.Add(new UpgradeSaveEntry { id = kvp.Key, level = kvp.Value });
             }
 
+            data.Planet = LocationManager.Instance.CurrentLocation.Name;
+
             PlayerSaveSystem.Save(data);
         }
 
