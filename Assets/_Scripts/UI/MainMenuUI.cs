@@ -9,7 +9,27 @@ namespace FishingGame.UI
         // METHODS
         public void PlayButton()
         {
-            SceneLoader.Instance.LoadGameplayScene("Earth");
+            if (PlayerSaveSystem.Exists())
+            {
+                try
+                {
+                    string sceneName = PlayerSaveSystem.Load().Planet;
+                    SceneLoader.Instance.LoadGameplayScene(string.IsNullOrEmpty(sceneName) ? "Earth" : sceneName);
+                }
+                catch
+                {
+                    SceneLoader.Instance.LoadGameplayScene("Earth");
+                }
+            }
+            else
+            {
+                SceneLoader.Instance.LoadScene("Intro");
+            }
+        }
+
+        public void GoToScene(string sceneName)
+        {
+            SceneLoader.Instance.LoadScene(sceneName);
         }
 
         public void ExitButton()

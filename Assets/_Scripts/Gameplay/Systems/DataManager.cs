@@ -4,6 +4,7 @@ using UnityEngine;
 
 using FishingGame.Data;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 namespace FishingGame.Gameplay.Systems
 {
@@ -53,11 +54,16 @@ namespace FishingGame.Gameplay.Systems
                 new RarityConfig { Rarity = Rarities.Rare,      BaseWeight = 1,    ScalingFactor = 5  },
                 new RarityConfig { Rarity = Rarities.VeryRare,  BaseWeight = 0.5f,    ScalingFactor = 7  },
                 new RarityConfig { Rarity = Rarities.Legendary, BaseWeight = 0.1f,    ScalingFactor = 9  },
-                new RarityConfig { Rarity = Rarities.Cosmic,    BaseWeight = 0.001f,    ScalingFactor = 10  }
+                new RarityConfig { Rarity = Rarities.Cosmic,    BaseWeight = 0.001f,    ScalingFactor = 20  }
             });
 
             var matchingRarityFishes = location.Fishes.Where(fish => fish.Rarity == randomRarity).ToArray();
             Debug.Log($"Rarity: {randomRarity}; Matches: {matchingRarityFishes.Length}");
+
+            if (randomRarity == Rarities.Cosmic)
+            {
+                matchingRarityFishes = matchingRarityFishes.Where(fish => !CollectionManager.Instance.IsCollected(fish)).ToArray();
+            }
 
             return matchingRarityFishes[Random.Range(0, matchingRarityFishes.Length)];
         }

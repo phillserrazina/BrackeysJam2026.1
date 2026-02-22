@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: Sandpuller
   Description: It's an Anchovy!
   Rarity: 1
-  Sprite: {fileID: 896820937863134584, guid: 00e4add81ad311c49afaeeab04394f1b, type: 3}
+  Sprite: {fileID: 21300000, guid: 594f1216ffc3f5b409fed757fda6b9d4, type: 3}
   SellValue: 60
   ObjectID: Fish_3_1

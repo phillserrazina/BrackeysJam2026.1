@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
 using FishingGame.UI;
@@ -21,6 +22,8 @@ namespace FishingGame.Gameplay.Systems
         private System.Collections.Generic.List<UpgradeSaveEntry> pendingUpgrades = new();
 
         public static PlayerManager Instance { get; private set; }
+
+        public bool IsFrozen { get; private set; } = false;
 
         // EXECUTION FUNCTIONS
         private void Awake()
@@ -103,29 +106,49 @@ namespace FishingGame.Gameplay.Systems
                 data.upgrades.Add(new UpgradeSaveEntry { id = kvp.Key, level = kvp.Value });
             }
 
+            data.Planet = LocationManager.Instance.CurrentLocation.Name;
+
             PlayerSaveSystem.Save(data);
         }
-
-        
 
         // INPUT
         private void OnCast(InputValue input)
         {
+            if (IsFrozen)
+            {
+                return;
+            }
+
             fishingController.OnFishingInput(input.isPressed);
         }
 
         private void OnFish(InputValue input)
         {
+            if (IsFrozen)
+            {
+                return;
+            }
+
             fishingController.OnFishingInput(input.isPressed);
         }
 
         private void OnPause(InputValue input)
         {
+            if (IsFrozen)
+            {
+                return;
+            }
+
             GameManager.Instance.TriggerPause();
         }
 
         private void OnCollection(InputValue input)
         {
+            if (IsFrozen)
+            {
+                return;
+            }
+
             if (collectionMenu == null)
             {
                 collectionMenu = FindFirstObjectByType<CollectionMenuUI>(FindObjectsInactive.Include);
@@ -136,6 +159,11 @@ namespace FishingGame.Gameplay.Systems
 
         private void OnUpgrades(InputValue input)
         {
+            if (IsFrozen)
+            {
+                return;
+            }
+
             if (upgradesMenu == null)
             {
                 upgradesMenu = FindFirstObjectByType<UpgradesMenuUI>(FindObjectsInactive.Include);
@@ -149,13 +177,23 @@ namespace FishingGame.Gameplay.Systems
         {
             SceneLoader.Instance.LoadEnvironment(levelName, () =>
             {
-                
+                foreach (var button in FindObjectsByType<Button>(FindObjectsSortMode.None))
+                {
+                    button.enabled = true;
+                }
+
+                IsFrozen = false;
             });
         }
 
         public float GetUpgradeModifiedValue(UpgradeTypes upgradeType, float value)
         {
             return Upgrades.GetModifiedValue(upgradeType, value);
+        }
+
+        public void Freeze()
+        {
+            IsFrozen = true;
         }
     }
 }
