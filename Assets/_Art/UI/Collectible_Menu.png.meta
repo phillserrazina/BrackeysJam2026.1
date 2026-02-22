@@ -1,0 +1,704 @@
+fileFormatVersion: 2
+guid: 607647508f26c6744aedbfa9cdf6cbd0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4288869192993663756
+    second: Collectible_Menu_0
+  - first:
+      213: 4836897047825075602
+    second: Collectible_Menu_1
+  - first:
+      213: -1147617407304841942
+    second: Collectible_Menu_2
+  - first:
+      213: 2964127755390242938
+    second: Collectible_Menu_3
+  - first:
+      213: -1325643216464896238
+    second: Collectible_Menu_4
+  - first:
+      213: -2672043064191729371
+    second: Collectible_Menu_5
+  - first:
+      213: 1814701942704628485
+    second: Collectible_Menu_6
+  - first:
+      213: 3533446987175229428
+    second: Collectible_Menu_7
+  - first:
+      213: -3077600493850738572
+    second: Collectible_Menu_8
+  - first:
+      213: 2580708150697709290
+    second: Collectible_Menu_9
+  - first:
+      213: -7509791193076770396
+    second: Collectible_Menu_10
+  - first:
+      213: 1916619184742582061
+    second: Collectible_Menu_11
+  - first:
+      213: -4756951420729343938
+    second: Collectible_Menu_12
+  - first:
+      213: 4933273225564314703
+    second: Collectible_Menu_13
+  - first:
+      213: 8611393325374169133
+    second: Collectible_Menu_14
+  - first:
+      213: 7914285277895132627
+    second: Collectible_Menu_15
+  - first:
+      213: 8368107652099146083
+    second: Collectible_Menu_16
+  - first:
+      213: 8536957408222833422
+    second: Collectible_Menu_17
+  - first:
+      213: 432908217478033154
+    second: Collectible_Menu_18
+  - first:
+      213: -1429464996499652700
+    second: Collectible_Menu_19
+  - first:
+      213: -8164559446306212085
+    second: Collectible_Menu_20
+  - first:
+      213: -7831752316540874533
+    second: Collectible_Menu_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Collectible_Menu_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f41f7f3130ea74c0800000000000000
+      internalID: -4288869192993663756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 256
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29dcfbeec3c102340800000000000000
+      internalID: 4836897047825075602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a254a836c08d210f0800000000000000
+      internalID: -1147617407304841942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 256
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7059e82d72b22920800000000000000
+      internalID: 2964127755390242938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_4
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 256
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f14b7a48e5a9de0800000000000000
+      internalID: -1325643216464896238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_5
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 256
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5214e4e7dfefaead0800000000000000
+      internalID: -2672043064191729371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_6
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 256
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503ee1c5dcd1f2910800000000000000
+      internalID: 1814701942704628485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7f0475053590130800000000000000
+      internalID: 3533446987175229428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_8
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470c57b18aa2a45d0800000000000000
+      internalID: -3077600493850738572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeeca4fc36480d320800000000000000
+      internalID: 2580708150697709290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_10
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 128
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a95d4fc2bcd7c790800000000000000
+      internalID: -7509791193076770396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 128
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27c74c6ef2399a10800000000000000
+      internalID: 1916619184742582061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_12
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 128
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3043a1e2e9ebfdb0800000000000000
+      internalID: -4756951420729343938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_13
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 128
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4cd4bd6cd1867440800000000000000
+      internalID: 4933273225564314703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20e814ba90d18770800000000000000
+      internalID: 8611393325374169133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_15
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d50b00578035dd60800000000000000
+      internalID: 7914285277895132627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_16
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 361099dc29d712470800000000000000
+      internalID: 8368107652099146083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_17
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0be2c3388d597670800000000000000
+      internalID: 8536957408222833422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_18
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f202beabff10600800000000000000
+      internalID: 432908217478033154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_19
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af78c8c825892ce0800000000000000
+      internalID: -1429464996499652700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_20
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07bb57f078a1be80800000000000000
+      internalID: -8164559446306212085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectible_Menu_21
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 0
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd01db333c6005390800000000000000
+      internalID: -7831752316540874533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 875956ae718a616489ab74d8f88568d9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":3.0},"gridSpriteSize":{"x":176.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Collectible_Menu_0: -4288869192993663756
+      Collectible_Menu_1: 4836897047825075602
+      Collectible_Menu_10: -7509791193076770396
+      Collectible_Menu_11: 1916619184742582061
+      Collectible_Menu_12: -4756951420729343938
+      Collectible_Menu_13: 4933273225564314703
+      Collectible_Menu_14: 8611393325374169133
+      Collectible_Menu_15: 7914285277895132627
+      Collectible_Menu_16: 8368107652099146083
+      Collectible_Menu_17: 8536957408222833422
+      Collectible_Menu_18: 432908217478033154
+      Collectible_Menu_19: -1429464996499652700
+      Collectible_Menu_2: -1147617407304841942
+      Collectible_Menu_20: -8164559446306212085
+      Collectible_Menu_21: -7831752316540874533
+      Collectible_Menu_3: 2964127755390242938
+      Collectible_Menu_4: -1325643216464896238
+      Collectible_Menu_5: -2672043064191729371
+      Collectible_Menu_6: 1814701942704628485
+      Collectible_Menu_7: 3533446987175229428
+      Collectible_Menu_8: -3077600493850738572
+      Collectible_Menu_9: 2580708150697709290
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
