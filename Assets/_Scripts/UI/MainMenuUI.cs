@@ -12,6 +12,11 @@ namespace FishingGame.UI
             SceneLoader.Instance.LoadGameplayScene("Earth");
         }
 
+        public void GoToScene(string sceneName)
+        {
+            SceneLoader.Instance.LoadScene(sceneName);
+        }
+
         public void ExitButton()
         {
             Application.Quit();

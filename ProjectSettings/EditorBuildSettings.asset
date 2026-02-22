@@ -15,17 +15,23 @@ EditorBuildSettings:
     path: Assets/_Scenes/UI.unity
     guid: 0e4be06c1701b0941aaab0334df60877
   - enabled: 1
+    path: Assets/_Scenes/Intro.unity
+    guid: e94f0934c51c993488ebf3f7210d96b7
+  - enabled: 1
     path: Assets/_Scenes/Earth.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/_Scenes/Laeto.unity
-    guid: 58f7b4f4724c9d043bf7904cb50817ea
   - enabled: 1
     path: Assets/_Scenes/Cirrus.unity
     guid: b92b41d1293f9004ab88b5f44d09e938
   - enabled: 1
     path: Assets/_Scenes/Insolitum.unity
-    guid: d049a08461c16584e982bede6d75c201
+    guid: 3fd742787e418e943978e55604ba115e
+  - enabled: 1
+    path: Assets/_Scenes/Laeto.unity
+    guid: 58f7b4f4724c9d043bf7904cb50817ea
+  - enabled: 1
+    path: Assets/_Scenes/Win Menu.unity
+    guid: f7368e2e45906db43810fa1cd41de116
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

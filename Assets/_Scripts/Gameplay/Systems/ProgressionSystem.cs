@@ -63,11 +63,11 @@ namespace FishingGame.Gameplay.Systems
                     {
                         if (SceneLoader.Instance == null)
                         {
-                            SceneManager.LoadScene("Main Menu");
+                            SceneManager.LoadScene("Win Menu");
                             return;
                         }
 
-                        SceneLoader.Instance.LoadScene("Main Menu");
+                        SceneLoader.Instance.LoadScene("Win Menu");
                     });
 
                     return;
