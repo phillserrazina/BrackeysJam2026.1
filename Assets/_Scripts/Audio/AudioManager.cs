@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 namespace FishingGame.Audio
 {
     public class AudioManager : MonoBehaviour
     {
         public static AudioManager Instance { get; private set; }
+
+        public AudioMixerGroup mixer;
 
         [Header("SFX Clips")]
         public AudioClip moneyGain;
@@ -36,6 +39,8 @@ namespace FishingGame.Audio
             source = GetComponent<AudioSource>();
             if (source == null)
                 source = gameObject.AddComponent<AudioSource>();
+
+            source.outputAudioMixerGroup = mixer;
 
             // separate audio source for looping sounds (reel loop)
             loopSource = gameObject.AddComponent<AudioSource>();

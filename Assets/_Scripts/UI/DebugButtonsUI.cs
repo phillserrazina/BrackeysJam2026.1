@@ -7,6 +7,18 @@ namespace FishingGame.UI
 {
     public class DebugButtonsUI : MonoBehaviour
     {
+        // VARIABLES
+        [SerializeField] private GameObject debugContents;
+
+        // EXECUTION FUNCTIONS
+        private void Update()
+        {
+            if (OptionsManager.Instance != null)
+            {
+                debugContents.SetActive(OptionsManager.Instance.DebugModeEnabled);
+            }
+        }
+
         // METHODS
         public void PauseButton()
         {
